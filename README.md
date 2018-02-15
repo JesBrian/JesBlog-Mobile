@@ -1,6 +1,8 @@
 # jesblog-app
 
-> A Vue.js project
+> 技术栈：<br/>
+&emsp;&emsp;页面开发：[ vue + vue-router + vuex + vue-lazyload + axios ]<br/>
+&emsp;&emsp;打包移动端应用：[ Apache Cordova ]
 
 ## Build Setup
 
