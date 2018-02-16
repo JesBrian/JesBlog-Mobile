@@ -4,6 +4,7 @@ import index from '@/views/index.vue'
 import user from '@/views/user.vue'
 import article from '@/views/article.vue'
 import category from '@/views/category.vue'
+import search from '@/views/search.vue'
 
 Vue.use(Router)
 
@@ -24,6 +25,10 @@ export default new Router({
     {
       path: '/category',
       component: category
+    },
+    {
+      path: '/search',
+      component: search
     }
   ]
 })
