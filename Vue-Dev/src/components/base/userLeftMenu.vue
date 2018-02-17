@@ -12,8 +12,8 @@
 
         <p class="text-hidden" style="width:88%; padding-top:12px; color:#EEE; text-align:left; text-indent:90px;">JesBrian</p>
 
-        <div class="super-btn-out" style="width:108px; height:34px;">
-          <span class="super-btn-in" style="width:98px; height:24px; font-size:18px; line-height:24px;"> 修改资料</span>
+        <div class="super-btn-out" style="width:112px; height:34px; margin-left:8px;">
+          <span class="super-btn-in MyIF tool" style="width:101px; height:24px; font-size:18px; line-height:24px;"> 修改资料</span>
         </div>
       </div>
 
@@ -99,9 +99,9 @@
       </div>
 
       <!-- 底部设置 -->
-      <div class="box-show" style="width:100%; height:42px; bottom:0; left:0; position:absolute; background:#111; box-sizing:border-box; border-radius:0;">
-        <router-link to="/">设置</router-link>
-        <router-link to="/">退出</router-link>
+      <div class="box-show" style="width:100%; height:42px; bottom:0; left:0; position:absolute; background:#111; box-sizing:border-box; border-radius:0; font-size:92%; line-height:42px;">
+        <router-link to="/" style="margin:0 8%; color:#CCC;"><i class="MyIF gear" style="margin-right:8px; font-size:98%;"></i>设置</router-link>
+        <router-link to="/" style="margin:0 8%; color:#CCC;"><i class="MyIF exit-2" style="margin-right:8px; font-size:98%;"></i>退出</router-link>
       </div>
     </div>
   </div>
