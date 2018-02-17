@@ -3,15 +3,25 @@
 import Vue from 'vue'
 import App from './App'
 import router from './config/router.js'
+import axios from 'axios'
 import store from './config/store.js'
+import vueLazyload from 'vue-lazyload'
 
 Vue.config.productionTip = false
 
+// axios.defaults.withCredentials = true
+// axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
+axios.defaults.baseURL = 'http://localhost/JesBlog-Backstage/web/index.php/'
+Vue.prototype.axios = axios
+Vue.use(vueLazyload, {
+  error: 'http://localhost/JesBlog-Backstage/web/img/loading.svg',
+  loading: 'http://localhost/JesBlog-Backstage/web/img/loading.svg'
+})
+
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
   router,
   store,
-  components: { App },
-  template: '<App/>'
+  el: '#app',
+  render: h => h(App)
 })
