@@ -38,6 +38,11 @@ export default new Router({
           component: search
         }
       ]
+    },
+    {
+      path: '/',
+      component: iframe,
+      redirect: '/m/index'
     }
   ]
 })

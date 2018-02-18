@@ -36,6 +36,9 @@ export default {
     -webkit-appearance: none;
     appearance: none;
   }
+  input:focus {
+    outline: none;
+  }
   ol, ul {
     list-style: none;
   }
@@ -169,7 +172,7 @@ export default {
     width: 100%;
     max-width: 640px;
     display: inline-block;
-    background: #2E2E2E;
+    background: #444;
     margin: 0 auto;
   }
 </style>

@@ -10,9 +10,6 @@
 </template>
 
 <script>
-import navMenu from '@/components/base/navMenu'
-import userLeftMenu from '@/components/base/userLeftMenu'
-
 export default {
   name: 'index',
 
@@ -21,10 +18,7 @@ export default {
     }
   },
 
-  components: {
-    navMenu,
-    userLeftMenu
-  }
+  components: {}
 }
 </script>
 
