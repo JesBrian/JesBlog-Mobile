@@ -1,18 +1,11 @@
 <template>
-  <div id="viewsBody">
-
-    <!-- 导航条 -->
-    <nav-menu/>
-
-    <!-- 用户菜单 -->
-    <user-left-menu/>
-
+  <div>
     this is index views <hr/>
-
-    <router-link to="/">index</router-link>
-    <router-link to="/user">user</router-link>
-    <router-link to="/category">category</router-link>
-    <router-link to="/article">article</router-link>
+    <router-link to="/m">index</router-link>
+    <router-link to="/m/user">user</router-link>
+    <router-link to="/m/category">category</router-link>
+    <router-link to="/m/article">article</router-link>
+    <router-link to="/m/search">search</router-link>
   </div>
 </template>
 
