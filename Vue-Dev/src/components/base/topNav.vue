@@ -10,7 +10,7 @@
     <div v-if="this.$route.path === '/m/index' || this.$route.path === '/m/category' || this.$route.path === '/m/article'" style="width:100%; height:100%; padding:0 53px; box-sizing:border-box;">
       <div style="width:100%; height:100%;">
         <router-link class="MyIF hot" to="/m/index"/>
-        <router-link class="MyIF cubes-3" to="/m/category"/>
+        <router-link class="MyIF music-box" to="/m/category"/>
         <router-link class="MyIF add-data" to="/m/article"/>
       </div>
     </div>

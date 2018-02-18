@@ -1,5 +1,5 @@
 <template>
-  <div :class="{'user-left-menu': this.$store.state.showUserLeftMenu}" style="width:100%; height:100%; top:0; left:-100%; position:fixed; z-index:99;">
+  <div :class="{'user-left-menu': this.$store.state.showUserLeftMenu}" style="width:100%; height:100%; top:0; left:-100%; position:fixed; z-index:99; background:rgba(0,0,0,0.6);">
     <div @click="changeUserMenuShow" style="width:100%; height:100%; top:0; left:0; position:absolute; z-index:1;"></div>
 
     <div class="glass-bg box-show" style="width:288px; height:100%; box-sizing:border-box; border-radius:0; position:relative; z-index:9;">
