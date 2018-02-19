@@ -4,7 +4,7 @@
     <swiper :options="swiperOption" style="width:100%; height:100%; position:relative;">
       <swiper-slide v-for="(slide, index) in swiperSlides" class="s1c-Bg" style="border-radius:3px;" :key="index">
         <img :data-src="slide" class="swiper-lazy" style="width:100%; height:100%;"/>
-        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        <!--<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>-->
         <!--<baseLoading class="my-lazy-preloader" style="margin-top:13%;"/>-->
       </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>

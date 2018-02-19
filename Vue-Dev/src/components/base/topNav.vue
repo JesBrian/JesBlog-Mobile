@@ -7,11 +7,12 @@
     </div>
 
     <!-- 功能模块 -->
-    <div v-if="this.$route.path === '/m/index' || this.$route.path === '/m/category' || this.$route.path === '/m/article'" style="width:100%; height:100%; padding:0 53px; box-sizing:border-box; line-height:55px;">
+    <div v-if="this.$route.path === '/m/index' || this.$route.path === '/m/categoryList' || this.$route.path === '/m/authorList' || this.$route.path === '/m/articleManagement'" style="width:100%; height:100%; padding:0 53px; box-sizing:border-box; line-height:55px;">
       <div style="width:100%; height:100%;">
         <router-link class="MyIF hot" to="/m/index"/>
-        <router-link class="MyIF music-box" to="/m/category"/>
-        <router-link class="MyIF add-data" to="/m/article"/>
+        <router-link class="MyIF music-box" to="/m/categoryList"/>
+        <router-link class="MyIF avatar" to="/m/authorList"/>
+        <router-link class="MyIF add-data" to="/m/articleManagement"/>
       </div>
     </div>
 

@@ -118,9 +118,6 @@ export default {
     -ms-user-select: none; /*IE10*/
     user-select: none;
   }
-  .super-btn-out:hover {
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 10px 0.3px rgba(45, 190, 255, 0.4), 0 0 1px rgba(0, 0, 0, 0.5), 0 2px 2px rgba(0, 0, 0, 0.4);
-  }
   .super-btn-in {
     top: 50%;
     left: 50%;
@@ -135,12 +132,6 @@ export default {
     border: none;
     color: #AAA;
     text-shadow: 2px 2px 5px #000;
-  }
-  .super-btn-out:hover > .super-btn-in {
-    color: #70ff92;
-    text-shadow: 2px 2px 5px #222;
-    background-size: 100%;
-    background-image: linear-gradient(#545454, #373738);
   }
   .super-btn-out:active > .super-btn-in {
     color: #5CEBDC;
