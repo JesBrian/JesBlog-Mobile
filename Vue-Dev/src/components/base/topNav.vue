@@ -3,11 +3,11 @@
 
     <!-- 用户菜单按钮 -->
     <div class="super-btn-out" @click="changeUserMenuShow" style="width:33px; height:33px; top:8px; left:8px; position:absolute;">
-      <span class="super-btn-in MyIF theme" style="width:26px; height:26px; line-height:27px; font-size:21px;"></span>
+      <span class="super-btn-in MyIF theme" style="width:26px; height:25px; top:49%; line-height:27px; font-size:21px;"></span>
     </div>
 
     <!-- 功能模块 -->
-    <div v-if="this.$route.path === '/m/index' || this.$route.path === '/m/category' || this.$route.path === '/m/article'" style="width:100%; height:100%; padding:0 53px; box-sizing:border-box;">
+    <div v-if="this.$route.path === '/m/index' || this.$route.path === '/m/category' || this.$route.path === '/m/article'" style="width:100%; height:100%; padding:0 53px; box-sizing:border-box; line-height:55px;">
       <div style="width:100%; height:100%;">
         <router-link class="MyIF hot" to="/m/index"/>
         <router-link class="MyIF music-box" to="/m/category"/>
@@ -17,7 +17,7 @@
 
     <!-- 搜索按钮 & 搜索框 -->
     <router-link class="super-btn-out" to="/m/search" v-if="this.$route.path !== '/m/search'" style="width:33px; height:33px; top:8px; right:8px; position:absolute;">
-      <span class="super-btn-in MyIF search" style="width:26px; height:26px; line-height:27px; font-size:21px;"></span>
+      <span class="super-btn-in MyIF search" style="width:26px; height:25px; top:49%; line-height:27px; font-size:21px;"></span>
     </router-link>
     <div v-else style="width:100%; height:38px; margin-top:6px; padding-left:58px; float:right; box-sizing:border-box;">
       <div class="glass-bg box-show" style="width:98%; height:100%; position:relative;">
