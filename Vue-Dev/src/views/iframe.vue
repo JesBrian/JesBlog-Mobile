@@ -9,13 +9,13 @@
     <user-left-menu/>
 
     <!-- 二级路由 -->
-    <router-view style="margin-top:68px;"/>
+    <router-view style="margin:68px 0 48px;"/>
 
     <!-- 二级路由 -->
     <float-block/>
 
     <!-- 底部导航条 -->
-    <bottom-nav v-if="this.$route.path !== '/m/article'"/>
+    <bottom-nav/>
 
   </div>
 </template>

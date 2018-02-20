@@ -12,11 +12,11 @@ Vue.config.productionTip = false
 
 // axios.defaults.withCredentials = true
 // axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
-axios.defaults.baseURL = 'http://localhost/JesBlog-Backstage/web/index.php/'
+axios.defaults.baseURL = 'http://jesbrian.cn/JesBlog-Backstage/web/index.php/'
 Vue.prototype.axios = axios
 Vue.use(vueLazyload, {
-  error: 'http://localhost/JesBlog-Backstage/web/img/loading.svg',
-  loading: 'http://localhost/JesBlog-Backstage/web/img/loading.svg'
+  error: 'http://jesbrian.cn/JesBlog-Backstage/web/img/loading.svg',
+  loading: 'http://jesbrian.cn/JesBlog-Backstage/web/img/loading.svg'
 })
 
 /* eslint-disable no-new */

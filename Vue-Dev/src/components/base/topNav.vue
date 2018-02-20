@@ -7,7 +7,13 @@
     </div>
 
     <!-- 功能模块 -->
-    <div v-if="this.$route.path === '/m/index' || this.$route.path === '/m/categoryList' || this.$route.path === '/m/authorList' || this.$route.path === '/m/articleManagement'" style="width:100%; height:100%; padding:0 53px; box-sizing:border-box; line-height:55px;">
+    <div v-if="this.$route.path === '/m/article'">
+      <p style="line-height:53px; color:#CCC; font-size:28px; letter-spacing:2px; font-weight:700;">文章详情</p>
+    </div>
+    <div v-else-if="this.$route.path === '/m/write'">
+      <p style="line-height:53px; color:#CCC; font-size:28px; letter-spacing:2px; font-weight:700;">编写文章</p>
+    </div>
+    <div v-else-if="this.$route.path === '/m/index' || this.$route.path === '/m/categoryList' || this.$route.path === '/m/authorList' || this.$route.path === '/m/articleManagement'" style="width:100%; height:100%; padding:0 53px; box-sizing:border-box; line-height:55px;">
       <div style="width:100%; height:100%;">
         <router-link class="MyIF hot" to="/m/index"/>
         <router-link class="MyIF music-box" to="/m/categoryList"/>

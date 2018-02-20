@@ -7,6 +7,7 @@
     <router-link to="/m/category">category</router-link>
     <router-link to="/m/article">article</router-link>
     <router-link to="/m/search">search</router-link>
+    <router-link to="/m/write">write</router-link>
   </div>
 </template>
 
