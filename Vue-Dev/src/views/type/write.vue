@@ -27,7 +27,17 @@
       </tr>
       <tr>
         <td colspan="2">
-          <div class="box-show" style="width:90%; margin:0 auto; min-height:388px;"></div>
+          <div class="box-show" style="width:90%; margin:0 auto; min-height:288px;"></div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top:18px;">
+          <span class="super-btn-out" style="width:88px; height:30px; margin:0 8px;">
+            <span class="super-btn-in" style="width:78px; height:20px; top:48%;"></span>
+          </span>
+          <span class="super-btn-out" style="width:88px; height:30px; margin:0 8px;">
+            <span class="super-btn-in" style="width:78px; height:20px; top:48%;"></span>
+          </span>
         </td>
       </tr>
     </table>

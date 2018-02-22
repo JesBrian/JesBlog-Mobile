@@ -1,5 +1,5 @@
 <template>
-  <div id="viewsBody">
+  <div>
     this is user views<hr/>
     <router-link to="/m">index</router-link>
     <router-link to="/m/user">user</router-link>

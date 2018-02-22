@@ -1,5 +1,5 @@
 <template>
-  <div id="viewsBody">
+  <div>
       this is categoryList views<hr/>
   </div>
 </template>

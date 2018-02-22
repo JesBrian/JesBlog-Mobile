@@ -1,5 +1,5 @@
 <template>
-  <div class="glass-bg box-show" style="width:100%; height:55px; top:0; left:0; position:fixed; box-sizing:border-box; border-radius:0;">
+  <div class="glass-bg box-show" style="width:100%; height:55px; top:0; left:0; position:fixed; z-index:55; box-sizing:border-box; border-radius:0;">
 
     <!-- 用户菜单按钮 -->
     <div class="super-btn-out" @click="changeUserMenuShow" style="width:33px; height:33px; top:8px; left:8px; position:absolute;">

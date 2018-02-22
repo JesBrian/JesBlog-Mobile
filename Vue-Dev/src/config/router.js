@@ -7,6 +7,7 @@ import authorList from '@/views/type/authorList.vue'
 import articleManagement from '@/views/type/articleManagement.vue'
 import user from '@/views/type/user.vue'
 import article from '@/views/type/article.vue'
+import category from '@/views/type/category.vue'
 import write from '@/views/type/write.vue'
 import search from '@/views/type/search.vue'
 
@@ -43,6 +44,10 @@ export default new Router({
         {
           path: 'article',
           component: article
+        },
+        {
+          path: 'category',
+          component: category
         },
         {
           path: 'write',
