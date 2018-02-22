@@ -2,7 +2,7 @@
   <div :class="{'user-left-menu': this.$store.state.showUserLeftMenu}" style="width:100%; height:100%; top:0; left:-100%; position:fixed; z-index:99; background:rgba(0,0,0,0.6);">
     <div @click="changeUserMenuShow" style="width:100%; height:100%; top:0; left:0; position:absolute; z-index:1;"></div>
 
-    <div class="box-show" style="width:288px; height:100%; box-sizing:border-box; border-radius:0; position:relative; z-index:9; background:#444;">
+    <div class="box-show" style="width:228px; height:100%; box-sizing:border-box; border-radius:0; position:relative; z-index:9; background:#444;">
 
       <!-- 顶部头像 -->
       <div class="glass-bg box-show" style="width:100%; height:88px; box-sizing:border-box; border-radius:0;">
@@ -12,8 +12,8 @@
 
         <p class="text-hidden" style="width:88%; padding-top:12px; color:#EEE; text-align:left; text-indent:90px;">JesBrian</p>
 
-        <div class="super-btn-out" style="width:112px; height:34px; margin-left:8px;">
-          <span class="super-btn-in MyIF tool" style="width:101px; height:24px; font-size:18px; line-height:26px;"> 修改资料</span>
+        <div class="super-btn-out" style="width:102px; height:31px; margin:3px 88px; float:left;">
+          <span class="super-btn-in MyIF tool" style="width:92px; height:21px; top:48%; font-size:16px; line-height:22px;"> 修改资料</span>
         </div>
       </div>
 
