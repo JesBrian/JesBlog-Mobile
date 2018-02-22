@@ -1,5 +1,5 @@
 <template>
-  <div id="viewsBody">
+  <div>
     <div class="glass-bg box-show" style="width:92%; margin:0 auto; padding:8px 4px; box-sizing:border-box;">
 
       <p style="margin-left:5px; font-size:24px; color:#CCC; text-align:left; letter-spacing:1px; text-indent:1em;">文章标题文章标题文章标题文章标题</p>
@@ -28,6 +28,8 @@
       </div>
 
       <div class="box-show" style="width:92%; min-height:388px; margin:0 auto;"></div>
+
+      <div style="width:92%; height:38px; margin:0 auto;"></div>
 
     </div>
   </div>

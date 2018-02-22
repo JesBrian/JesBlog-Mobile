@@ -1,22 +1,26 @@
 <template>
   <!-- 框架页面 -->
-  <div id="viewsBody">
+  <div>
+    <div id="viewsBody">
 
-    <!-- 顶部导航条 -->
-    <top-nav/>
+      <!-- 顶部导航条 -->
+      <top-nav/>
 
-    <!-- 用户菜单 -->
-    <user-left-menu/>
+      <!-- 用户菜单 -->
+      <user-left-menu/>
+
+      <!--  -->
+      <div :class="{'hasSee': floatBlockSee}" @click="gotoTop" style="display:none;">
+        <float-block/>
+      </div>
+
+      <!-- 底部导航条 -->
+      <bottom-nav/>
+
+    </div>
 
     <!-- 二级路由 -->
-    <router-view style="margin:68px 0 48px;"/>
-
-    <!-- 二级路由 -->
-    <float-block/>
-
-    <!-- 底部导航条 -->
-    <bottom-nav/>
-
+    <router-view ref="iframeViews" style="margin:45px 0 56px;"/>
   </div>
 </template>
 
@@ -38,11 +42,40 @@ export default {
 
   data () {
     return {
+      floatBlockSee: false
+    }
+  },
+
+  mounted () {
+    // 为了保证兼容性，这里取两个值，哪个有值取哪一个
+    let scrollTop = document.documentElement.scrollTop || document.body.scrollTop
+
+    document.body.addEventListener('touchmove', function () {
+      let scrollTop = document.documentElement.scrollTop || document.body.scrollTop
+      console.log(scrollTop) // 计算你的屏幕高度
+    })
+
+    // scrollTop就是触发滚轮事件时滚轮的高度
+    if (scrollTop > 8) {
+      this.floatBlockSee = true
+    } else {
+      this.floatBlockSee = false
+    }
+  },
+
+  computed: {
+  },
+
+  methods: {
+    gotoTop () {
+      console.log(666)
     }
   }
 }
 </script>
 
 <style scoped>
-
+  .hasSee {
+    display:block!important;
+  }
 </style>
