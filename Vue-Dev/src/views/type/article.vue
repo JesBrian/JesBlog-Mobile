@@ -27,7 +27,7 @@
         <router-link to="/m/category">xxx</router-link>
       </div>
 
-      <div class="box-show" style="width:92%; min-height:388px; margin:0 auto;"></div>
+      <div class="box-show" style="width:92%; min-height:688px; margin:0 auto;"></div>
 
       <div style="width:92%; height:38px; margin:0 auto;"></div>
 

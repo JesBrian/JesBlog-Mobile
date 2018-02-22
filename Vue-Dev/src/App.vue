@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view style="width:100%; height:100%; overflow-y:auto;"/>
+    <router-view style="background:#2E2E2E;"/>
   </div>
 </template>
 
@@ -149,9 +149,6 @@ export default {
   #app {
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -161,7 +158,6 @@ export default {
 
   #viewsBody {
     width: 100%;
-    max-width: 640px;
     display: inline-block;
     background: #444;
     margin: 0 auto;

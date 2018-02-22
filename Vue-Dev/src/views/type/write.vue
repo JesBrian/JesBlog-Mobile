@@ -27,7 +27,7 @@
       </tr>
       <tr>
         <td colspan="2">
-          <div class="box-show" style="width:90%; margin:0 auto; min-height:288px;"></div>
+          <div class="box-show" style="width:90%; margin:0 auto; min-height:388px;"></div>
         </td>
       </tr>
     </table>
