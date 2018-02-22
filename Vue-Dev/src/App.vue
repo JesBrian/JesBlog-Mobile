@@ -105,6 +105,29 @@ export default {
     box-shadow: inset 0 2px 1px -1px rgba(255, 255, 255, 0.2), inset 0 -2px 1px -1px rgba(0, 0, 0, 0.2), 0 12px 12px rgba(0, 0, 0, 0.5), 0 4px 6px rgba(0, 0, 0, 0.3), inset 0 0 0 1px #272727;
   }
 
+  .box-shadow {
+    position:relative;
+  }
+  .box-shadow:before, .box-shadow:after {
+    content: '';
+    width: 86%;
+    height: 1px;
+    left:50%;
+    transform:translate(-50%, 0);
+    position: absolute;
+  }
+  .box-shadow:last-child:before, .box-shadow:last-child:after {
+    display:none;
+  }
+  .box-shadow:before {
+    bottom: -2px;
+    background: #222;
+  }
+  .box-shadow:after {
+    bottom: -1.3px;
+    background: #000;
+  }
+
   .super-btn-out {
     position: relative;
     display: inline-block;

@@ -21,80 +21,47 @@
       <div style="width:100%; height:100%; overflow-y:auto;">
         <ul style="margin-bottom:138px;">
           <li>
-            <router-link to="/" style="color:lightblue;">新建文章00</router-link>
+            <router-link class="glass-bg box-show" to="/" style="width:90%; height:38px; margin:12px auto 0; display:inline-block; font-size:23px; font-weight:700; color:#999; line-height:38px; letter-spacing:1.5px;">新建文章</router-link>
           </li>
           <li>
-            <router-link to="/" style="color:lightblue;">文章管理</router-link>
+            <router-link class="glass-bg box-show" to="/" style="width:90%; height:38px; margin:12px auto 0; display:inline-block; font-size:23px; font-weight:700; color:#999; line-height:38px; letter-spacing:1.5px;">新建文章</router-link>
           </li>
           <li>
-            <router-link to="/" style="color:lightblue;">修改资料</router-link>
+            <router-link class="glass-bg box-show" to="/" style="width:90%; height:38px; margin:12px auto 0; display:inline-block; font-size:23px; font-weight:700; color:#999; line-height:38px; letter-spacing:1.5px;">新建文章</router-link>
           </li>
           <li>
-            <router-link to="/" style="color:lightblue;">新建文章</router-link>
+            <router-link class="glass-bg box-show" to="/" style="width:90%; height:38px; margin:12px auto 0; display:inline-block; font-size:23px; font-weight:700; color:#999; line-height:38px; letter-spacing:1.5px;">新建文章</router-link>
           </li>
           <li>
-            <router-link to="/" style="color:lightblue;">文章管理</router-link>
+            <router-link class="glass-bg box-show" to="/" style="width:90%; height:38px; margin:12px auto 0; display:inline-block; font-size:23px; font-weight:700; color:#999; line-height:38px; letter-spacing:1.5px;">新建文章</router-link>
           </li>
           <li>
-            <router-link to="/" style="color:lightblue;">修改资料</router-link>
+            <router-link class="glass-bg box-show" to="/" style="width:90%; height:38px; margin:12px auto 0; display:inline-block; font-size:23px; font-weight:700; color:#999; line-height:38px; letter-spacing:1.5px;">新建文章</router-link>
           </li>
           <li>
-            <router-link to="/" style="color:lightblue;">新建文章</router-link>
+            <router-link class="glass-bg box-show" to="/" style="width:90%; height:38px; margin:12px auto 0; display:inline-block; font-size:23px; font-weight:700; color:#999; line-height:38px; letter-spacing:1.5px;">新建文章</router-link>
           </li>
           <li>
-            <router-link to="/" style="color:lightblue;">文章管理</router-link>
+            <router-link class="glass-bg box-show" to="/" style="width:90%; height:38px; margin:12px auto 0; display:inline-block; font-size:23px; font-weight:700; color:#999; line-height:38px; letter-spacing:1.5px;">新建文章</router-link>
           </li>
           <li>
-            <router-link to="/" style="color:lightblue;">修改资料</router-link>
+            <router-link class="glass-bg box-show" to="/" style="width:90%; height:38px; margin:12px auto 0; display:inline-block; font-size:23px; font-weight:700; color:#999; line-height:38px; letter-spacing:1.5px;">新建文章</router-link>
           </li>
           <li>
-            <router-link to="/" style="color:lightblue;">文章管理</router-link>
+            <router-link class="glass-bg box-show" to="/" style="width:90%; height:38px; margin:12px auto 0; display:inline-block; font-size:23px; font-weight:700; color:#999; line-height:38px; letter-spacing:1.5px;">新建文章</router-link>
           </li>
           <li>
-            <router-link to="/" style="color:lightblue;">修改资料</router-link>
+            <router-link class="glass-bg box-show" to="/" style="width:90%; height:38px; margin:12px auto 0; display:inline-block; font-size:23px; font-weight:700; color:#999; line-height:38px; letter-spacing:1.5px;">新建文章</router-link>
           </li>
           <li>
-            <router-link to="/" style="color:lightblue;">新建文章</router-link>
-          </li>
-          <li>
-            <router-link to="/" style="color:lightblue;">文章管理</router-link>
-          </li>
-          <li>
-            <router-link to="/" style="color:lightblue;">修改资料</router-link>
-          </li>
-          <li>
-            <router-link to="/" style="color:lightblue;">新建文章11</router-link>
-          </li>
-          <li>
-            <router-link to="/" style="color:lightblue;">文章管理</router-link>
-          </li>
-          <li>
-            <router-link to="/" style="color:lightblue;">修改资料</router-link>
-          </li>
-          <li>
-            <router-link to="/" style="color:lightblue;">文章管理</router-link>
-          </li>
-          <li>
-            <router-link to="/" style="color:lightblue;">修改资料</router-link>
-          </li>
-          <li>
-            <router-link to="/" style="color:lightblue;">新建文章</router-link>
-          </li>
-          <li>
-            <router-link to="/" style="color:lightblue;">文章管理</router-link>
-          </li>
-          <li>
-            <router-link to="/" style="color:lightblue;">修改资料</router-link>
-          </li>
-          <li>
-            <router-link to="/" style="color:lightblue;">新建文章11</router-link>
+            <router-link class="glass-bg box-show" to="/" style="width:90%; height:38px; margin:12px auto 0; display:inline-block; font-size:23px; font-weight:700; color:#999; line-height:38px; letter-spacing:1.5px;">新建文章</router-link>
           </li>
         </ul>
       </div>
 
       <!-- 底部设置 -->
       <div class="glass-bg box-show" style="width:100%; height:38px; bottom:0; left:0; position:absolute; box-sizing:border-box; border-radius:0; font-size:92%; line-height:38px;">
-        <router-link to="/" style="margin:0 8%; color:#CCC;"><i class="MyIF gear" style="margin-right:8px; font-size:98%;"></i>设置</router-link>
+        <router-link to="/m/update" style="margin:0 8%; color:#CCC;"><i class="MyIF gear" style="margin-right:8px; font-size:98%;"></i>设置</router-link>
         <router-link to="/" style="margin:0 8%; color:#CCC;"><i class="MyIF exit-2" style="margin-right:8px; font-size:98%;"></i>退出</router-link>
       </div>
     </div>

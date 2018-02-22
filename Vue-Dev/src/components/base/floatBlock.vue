@@ -21,7 +21,7 @@ export default {
 
     document.body.addEventListener('touchmove', function () {
       let scrollTop = document.documentElement.scrollTop || document.body.scrollTop
-      if (scrollTop > 168) {
+      if (scrollTop > 108) {
         thisObj.floatBlockSee = true
       } else {
         thisObj.floatBlockSee = false
@@ -29,7 +29,7 @@ export default {
     })
 
     // scrollTop就是触发滚轮事件时滚轮的高度
-    if (scrollTop > 168) {
+    if (scrollTop > 108) {
       this.floatBlockSee = true
     } else {
       this.floatBlockSee = false
@@ -41,7 +41,7 @@ export default {
 
   methods: {
     gotoTop () {
-      console.log(666)
+      // let scrollTop = document.documentElement.scrollTop || document.body.scrollTop
     }
   }
 }
@@ -49,6 +49,10 @@ export default {
 
 <style scoped>
   .hasSee {
+    opacity:0.48;
     display:block!important;
+  }
+  .hasSee:active {
+    opacity:1;
   }
 </style>

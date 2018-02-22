@@ -8,14 +8,14 @@
     </span>
 
     <ul style="margin:63px auto 18px;">
-      <li class="box-show" style="width:99%; height:88px; margin:8px auto;"></li>
-      <li class="box-show" style="width:99%; height:88px; margin:8px auto;"></li>
-      <li class="box-show" style="width:99%; height:88px; margin:8px auto;"></li>
-      <li class="box-show" style="width:99%; height:88px; margin:8px auto;"></li>
-      <li class="box-show" style="width:99%; height:88px; margin:8px auto;"></li>
-      <li class="box-show" style="width:99%; height:88px; margin:8px auto;"></li>
-      <li class="box-show" style="width:99%; height:88px; margin:8px auto;"></li>
-      <li class="box-show" style="width:99%; height:88px; margin:8px auto;"></li>
+      <li class="box-shadow" style="width:99%; height:88px; margin:8px auto;"></li>
+      <li class="box-shadow" style="width:99%; height:88px; margin:8px auto;"></li>
+      <li class="box-shadow" style="width:99%; height:88px; margin:8px auto;"></li>
+      <li class="box-shadow" style="width:99%; height:88px; margin:8px auto;"></li>
+      <li class="box-shadow" style="width:99%; height:88px; margin:8px auto;"></li>
+      <li class="box-shadow" style="width:99%; height:88px; margin:8px auto;"></li>
+      <li class="box-shadow" style="width:99%; height:88px; margin:8px auto;"></li>
+      <li class="box-shadow" style="width:99%; height:88px; margin:8px auto;"></li>
     </ul>
 
     </div>
