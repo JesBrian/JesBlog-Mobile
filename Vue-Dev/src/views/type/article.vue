@@ -21,10 +21,16 @@
         <!--</span>-->
       </div>
 
-      <div style="width:92%; height:42px; margin:8px auto; position:relative; background:lightgreen;">
-        <router-link to="/m/category">xxx</router-link>
-        <router-link to="/m/category">xxx</router-link>
-        <router-link to="/m/category">xxx</router-link>
+      <div style="width:92%; margin:24px auto; position:relative; text-align:right;">
+        <router-link class="cube-bg box-show" to="/m/category" style="width:80px; height:30px; position:relative; margin-right:18px; display:inline-block; color:#AAA; text-align:left; text-indent:16px; font-size:22px;">
+          <img v-lazy="'http://jesbrian.cn/JesBlog-Backstage/web/img/tag/tag1.png'" style="width:33px; height:38px; top:-4.5px; left:-20px; position:absolute;"/>假的v
+        </router-link>
+        <router-link class="cube-bg box-show" to="/m/category" style="width:80px; height:30px; position:relative; margin-right:18px; display:inline-block; color:#AAA; text-align:left; text-indent:16px; font-size:22px;">
+          <img v-lazy="'http://jesbrian.cn/JesBlog-Backstage/web/img/tag/tag2.png'" style="width:33px; height:38px; top:-4.5px; left:-20px; position:absolute;"/>xxx
+        </router-link>
+        <router-link class="cube-bg box-show" to="/m/category" style="width:80px; height:30px; position:relative; display:inline-block; color:#AAA; text-align:left; text-indent:16px; font-size:22px;">
+          <img v-lazy="'http://jesbrian.cn/JesBlog-Backstage/web/img/tag/tag3.png'" style="width:33px; height:38px; top:-4.5px; left:-20px; position:absolute;"/>xxx
+        </router-link>
       </div>
 
       <div class="box-show" style="width:92%; min-height:688px; margin:0 auto;"></div>

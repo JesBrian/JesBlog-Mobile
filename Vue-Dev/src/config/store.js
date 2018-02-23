@@ -6,7 +6,8 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     modalType: '',
-    showUserLeftMenu: false
+    showUserLeftMenu: false,
+    showFloatBlock: false
   },
   mutations: {
 
@@ -22,6 +23,13 @@ export default new Vuex.Store({
      */
     changeUserMenuShow (state) {
       state.showUserLeftMenu = !state.showUserLeftMenu
+    },
+
+    /**
+     * 是否显示回到顶部按钮
+     */
+    changeFloatBlockShow (state, type = true) {
+      state.showFloatBlock = type
     }
   }
 })

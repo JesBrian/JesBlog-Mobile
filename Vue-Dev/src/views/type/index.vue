@@ -12,6 +12,22 @@
     <button @click="testModal('warning')" style="padding:2px 5px; font-size:18px;">Test Warning</button>
     <button @click="testModal('login')" style="padding:2px 5px; font-size:18px;">Test Login</button>
     <button @click="testModal('register')" style="padding:2px 5px; font-size:18px;">Test Register</button>
+
+    <hr/>
+
+    <div class="glass-bg box-show" style="width:92%; margin:8px auto;">
+      <ul>
+        <li class="box-shadow" style="width:99%; height:88px; margin:8px auto;"></li>
+        <li class="box-shadow" style="width:99%; height:88px; margin:8px auto;"></li>
+        <li class="box-shadow" style="width:99%; height:88px; margin:8px auto;"></li>
+        <li class="box-shadow" style="width:99%; height:88px; margin:8px auto;"></li>
+        <li class="box-shadow" style="width:99%; height:88px; margin:8px auto;"></li>
+        <li class="box-shadow" style="width:99%; height:88px; margin:8px auto;"></li>
+        <li class="box-shadow" style="width:99%; height:88px; margin:8px auto;"></li>
+        <li class="box-shadow" style="width:99%; height:88px; margin:8px auto;"></li>
+      </ul>
+    </div>
+
   </div>
 </template>
 
