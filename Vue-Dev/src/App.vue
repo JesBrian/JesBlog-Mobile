@@ -121,7 +121,7 @@ export default {
   }
   .box-shadow:before {
     bottom: -2px;
-    background: #222;
+    background: #333;
   }
   .box-shadow:after {
     bottom: -1.3px;

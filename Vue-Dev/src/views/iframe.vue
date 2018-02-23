@@ -18,7 +18,11 @@
     </div>
 
     <!-- 二级路由 -->
-    <router-view ref="iframeViews" style="padding:45px 0 56px;"/>
+    <router-view style="padding:45px 0 56px;"/>
+
+    <!-- 拟态框 -->
+    <modal/>
+
   </div>
 </template>
 
@@ -27,6 +31,7 @@ import topNav from '@/components/base/topNav.vue'
 import userLeftMenu from '@/components/base/userLeftMenu.vue'
 import floatBlock from '@/components/base/floatBlock.vue'
 import bottomNav from '@/components/base/bottomNav.vue'
+import modal from '@/components/modal/modalTotal.vue'
 
 export default {
   name: 'iframe',
@@ -35,7 +40,8 @@ export default {
     topNav,
     bottomNav,
     floatBlock,
-    userLeftMenu
+    userLeftMenu,
+    modal
   }
 }
 </script>

@@ -1,5 +1,5 @@
 .DS_Store
-Vue-Dev/node_modules/
+/Vue-Dev/node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -16,4 +16,4 @@ selenium-debug.log
 *.sln
 /platforms/
 /node_modules/
-Vue-Dev/dist/
+/Vue-Dev/dist/
