@@ -115,16 +115,17 @@ export default {
     left:50%;
     transform:translate(-50%, 0);
     position: absolute;
+    z-index:9;
   }
   .box-shadow:last-child:before, .box-shadow:last-child:after {
     display:none;
   }
   .box-shadow:before {
-    bottom: -2px;
+    bottom: -1px;
     background: #333;
   }
   .box-shadow:after {
-    bottom: -1.3px;
+    bottom: -.3px;
     background: #000;
   }
 
