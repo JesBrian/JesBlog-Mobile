@@ -7,7 +7,7 @@
       <!-- 顶部头像 -->
       <div class="glass-bg" style="width:100%; height:88px; box-sizing:border-box; border-radius:0; box-shadow:inset 0 1px 1px -1px rgba(255, 255, 255, 0.2), inset 0 -1px 1px -1px rgba(0, 0, 0, 0.2), 0 12px 12px rgba(0, 0, 0, 0.5), 0 4px 6px rgba(0, 0, 0, 0.3), inset 0 0 0 1.8px #272727;">
         <div class="cube-bg box-show" style="width:62px; height:62px; top:10px; left:13px; display:inline-block; position:absolute;">
-          <img v-lazy="'http://jesbrian.cn/JesBlog-Backstage/web/img/touxiang.jpg'" style="width:90%; height:90%; margin-top:5%;" />
+          <img v-lazy="this.$store.state.baseHost + 'img/touxiang.jpg'" style="width:90%; height:90%; margin-top:5%;" />
         </div>
 
         <p class="text-hidden" style="width:88%; padding-top:12px; color:#EEE; text-align:left; text-indent:90px;">JesBrian</p>

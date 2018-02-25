@@ -12,8 +12,6 @@ import category from '@/views/type/category.vue'
 import write from '@/views/type/write.vue'
 import search from '@/views/type/search.vue'
 
-// import store from './store.js'
-
 Vue.use(Router)
 
 export default new Router({
@@ -22,9 +20,6 @@ export default new Router({
    * 每次页面跳转自动滚到顶部
    */
   scrollBehavior () {
-    // if (this.$store.state.showFloatBlock) {
-    //   this.$store.commit('changeFloatBlockShow')
-    // }
     return {x: 0, y: 0}
   },
 

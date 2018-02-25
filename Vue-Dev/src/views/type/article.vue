@@ -6,7 +6,7 @@
 
       <div style="width:92%; height:42px; margin:8px auto; position:relative;">
         <router-link to="/m/user" style="display:inline-block; float:left;">
-          <img v-lazy="'http://jesbrian.cn/JesBlog-Backstage/web/img/touxiang.jpg'" style="width:38px; height:38px; margin-right:12px; float:left; border-radius:4px;"/>
+          <img v-lazy="this.$store.state.baseHost + 'img/touxiang.jpg'" style="width:38px; height:38px; margin-right:12px; float:left; border-radius:4px;"/>
           <span style="color:#BBB;">JesBrian</span>
         </router-link>
         <p style="bottom:-3px; left:68px; position:absolute; color:#999; font-size:16px;">2018/12/12 12:12</p>
@@ -23,13 +23,13 @@
 
       <div style="width:92%; margin:24px auto; position:relative; text-align:right;">
         <router-link class="cube-bg box-show" to="/m/category" style="width:80px; height:30px; position:relative; margin-right:18px; display:inline-block; color:#AAA; text-align:left; text-indent:16px; font-size:22px;">
-          <img v-lazy="'http://jesbrian.cn/JesBlog-Backstage/web/img/tag/tag1.png'" style="width:33px; height:38px; top:-4.5px; left:-20px; position:absolute;"/>假的v
+          <img v-lazy="this.$store.state.baseHost + 'img/tag/tag1.png'" style="width:33px; height:38px; top:-4.5px; left:-20px; position:absolute;"/>假的v
         </router-link>
         <router-link class="cube-bg box-show" to="/m/category" style="width:80px; height:30px; position:relative; margin-right:18px; display:inline-block; color:#AAA; text-align:left; text-indent:16px; font-size:22px;">
-          <img v-lazy="'http://jesbrian.cn/JesBlog-Backstage/web/img/tag/tag2.png'" style="width:33px; height:38px; top:-4.5px; left:-20px; position:absolute;"/>xxx
+          <img v-lazy="this.$store.state.baseHost + 'img/tag/tag2.png'" style="width:33px; height:38px; top:-4.5px; left:-20px; position:absolute;"/>xxx
         </router-link>
         <router-link class="cube-bg box-show" to="/m/category" style="width:80px; height:30px; position:relative; display:inline-block; color:#AAA; text-align:left; text-indent:16px; font-size:22px;">
-          <img v-lazy="'http://jesbrian.cn/JesBlog-Backstage/web/img/tag/tag3.png'" style="width:33px; height:38px; top:-4.5px; left:-20px; position:absolute;"/>xxx
+          <img v-lazy="this.$store.state.baseHost + 'img/tag/tag3.png'" style="width:33px; height:38px; top:-4.5px; left:-20px; position:absolute;"/>xxx
         </router-link>
       </div>
 

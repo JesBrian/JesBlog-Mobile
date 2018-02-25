@@ -5,6 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    baseHost: 'http://jesbrian.cn/JesBlog-Backstage/web/',
     modalType: '',
     showUserLeftMenu: false,
     showFloatBlock: false
