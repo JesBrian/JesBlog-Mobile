@@ -23,6 +23,9 @@
     <!-- 拟态框 -->
     <modal/>
 
+    <!-- 提示条 -->
+    <tips v-if="this.$store.state.tips !== ''"/>
+
   </div>
 </template>
 
@@ -32,6 +35,7 @@ import userLeftMenu from '@/components/base/userLeftMenu.vue'
 import floatBlock from '@/components/base/floatBlock.vue'
 import bottomNav from '@/components/base/bottomNav.vue'
 import modal from '@/components/modal/modalTotal.vue'
+import tips from '@/components/alertTips/alertTips.vue'
 
 export default {
   name: 'iframe',
@@ -41,7 +45,8 @@ export default {
     bottomNav,
     floatBlock,
     userLeftMenu,
-    modal
+    modal,
+    tips
   }
 }
 </script>

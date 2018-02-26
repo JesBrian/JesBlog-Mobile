@@ -13,6 +13,9 @@
     <div v-else-if="this.$route.path === '/m/write'">
       <p style="line-height:53px; color:#CCC; font-size:28px; letter-spacing:2px; font-weight:700;">编写文章</p>
     </div>
+    <div v-else-if="this.$route.path === '/m/update'">
+      <p style="line-height:53px; color:#CCC; font-size:28px; letter-spacing:2px; font-weight:700;">更新资料</p>
+    </div>
     <div v-else-if="this.$route.path === '/m/index' || this.$route.path === '/m/categoryList' || this.$route.path === '/m/authorList' || this.$route.path === '/m/articleManagement'" style="width:100%; height:100%; padding:0 53px; box-sizing:border-box; line-height:55px;">
       <div style="width:100%; height:100%;">
         <router-link class="MyIF hot" to="/m/index"/>

@@ -9,7 +9,7 @@
         </span>
       </span>
 
-      <div class="glass-bg box-show" style="width:92%; margin:0px auto 18px;">
+      <div class="glass-bg box-show" style="width:92%; margin:0 auto 18px;">
         <ul>
           <li class="box-shadow" style="width:99%; height:88px; margin:8px auto;"></li>
           <li class="box-shadow" style="width:99%; height:88px; margin:8px auto;"></li>

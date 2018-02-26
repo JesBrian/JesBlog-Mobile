@@ -7,6 +7,7 @@ export default new Vuex.Store({
   state: {
     baseHost: 'http://jesbrian.cn/JesBlog-Backstage/web/',
     modalType: '',
+    tips: '',
     showUserLeftMenu: false,
     showFloatBlock: false
   },
@@ -17,6 +18,13 @@ export default new Vuex.Store({
      */
     changeModal (state, type = '') {
       state.modalType = type
+    },
+
+    /**
+     * 弹出提示框
+     */
+    changeTips (state, tips = '') {
+      state.tips = tips
     },
 
     /**

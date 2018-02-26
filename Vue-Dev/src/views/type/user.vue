@@ -1,11 +1,8 @@
 <template>
   <div>
-    this is user views<hr/>
-    <router-link to="/m">index</router-link>
-    <router-link to="/m/user">user</router-link>
-    <router-link to="/m/category">category</router-link>
-    <router-link to="/m/article">article</router-link>
-    <router-link to="/m/search">search</router-link>
+    <div class="glass-bg box-show" style="width:92%; min-height:688px; margin:0 auto;">
+
+    </div>
   </div>
 </template>
 
