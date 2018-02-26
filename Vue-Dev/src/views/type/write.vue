@@ -35,7 +35,7 @@
           <span class="super-btn-out" style="width:108px; height:33px; margin:0 6px;">
             <span class="super-btn-in MyIF information" style="width:98px; height:23px; top:48%; line-height:24px;"> 存为草稿</span>
           </span>
-          <span class="super-btn-out" style="width:33px; height:33px; margin:0 6px;">
+          <span class="super-btn-out" @click="delArticle" style="width:33px; height:33px; margin:0 6px;">
             <span class="super-btn-in MyIF trash-1" style="width:25px; height:25px; top:48%; line-height:26px; font-size:22px;"></span>
           </span>
           <span class="super-btn-out" style="width:108px; height:33px; margin:0 6px;">
@@ -49,7 +49,13 @@
 
 <script>
 export default {
-  name: 'write'
+  name: 'write',
+
+  methods: {
+    delArticle () {
+      this.$store.commit('changeModal', 'warning')
+    }
+  }
 }
 </script>
 

@@ -13,11 +13,11 @@
     <p style="padding:0 18px; word-break:break-all; text-align:left; letter-spacing:0.8px; text-indent:1.3em;">是否要 XXXXXXX 操作！</p>
 
     <div style="margin:18px auto 10px;">
-      <span class="super-btn-out" @click="closeModal" style="width:88px; height:32px; margin:0 8px 0 0;">
-        <span class="super-btn-in MyIF cancel" style="width:78px; height:25px; line-height:25px;"> 取消</span>
+      <span class="super-btn-out" @click="closeModal" style="width:80px; height:35px; margin:0 8px 0 0;">
+        <span class="super-btn-in MyIF cancel" style="width:70px; height:25px; line-height:25px;"> 取消</span>
       </span>
-      <span class="super-btn-out" style="width:88px; height:32px; margin:0 0 0 8px;">
-        <span class="super-btn-in MyIF makesure" style="width:78px; height:25px; line-height:25px;"> 确认</span>
+      <span class="super-btn-out" style="width:80px; height:35px; margin:0 0 0 8px;">
+        <span class="super-btn-in MyIF makesure" style="width:70px; height:25px; line-height:25px;"> 确认</span>
       </span>
     </div>
   </div>

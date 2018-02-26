@@ -101,6 +101,10 @@ export default {
   }
 
   li.box-shadow:active {
-    background:#191919;
+    background:#333;
+  }
+
+  li.box-shadow:active a {
+    color:#EEE!important;
   }
 </style>

@@ -21,7 +21,7 @@ export default {
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.68);
-    position: absolute;
+    position: fixed;
     z-index:555;
   }
 </style>
