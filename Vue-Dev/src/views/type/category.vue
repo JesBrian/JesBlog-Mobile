@@ -5,7 +5,7 @@
         <div class="cube-bg" style="width:62px; height:62px; top:18px; left:20px; position:absolute; display:inline-block;">
           <img class="box-show" v-lazy="this.$store.state.baseHost + 'img/touxiang.jpg'" style="width:88%; height:88%; margin-top:6%;"/>
         </div>
-        <p class="text-hidden" style="width:100%; padding:14px 8px 0 93px; float:left; box-sizing:border-box; color:#EEE; font-size:23px; font-weight:600;">分类名称 分类名称 分类名称 分类名称</p>
+        <p class="text-hidden" style="width:100%; padding:14px 8px 0 96px; text-align:left; box-sizing:border-box; color:#EEE; font-size:23px; font-weight:600;">分类名称 分类名称 分类名称 分类名称</p>
         <p style="padding-left:80px; text-align:left; color:#999; font-size:16px;">
           <i class="MyIF hot" style="margin:0 5px 0 21px; font-size:18px; color:#9f8bff;"></i>A
           <i class="MyIF MyIF information" style="margin:0 5px 0 21px; font-size:18px; color:#9f8bff;"></i>888
@@ -14,7 +14,7 @@
       </div>
 
       <div style="margin-top:6px; position:relative">
-        <div style="width:100%; height:48px; padding:0 88px 0 23px; box-sizing:border-box; line-height:48px; font-size:21px; font-weight:700; letter-spacing:1px; color:#AAA;">
+        <div style="width:100%; height:48px; padding:0 88px 0 23px; box-sizing:border-box; line-height:48px; font-size:19px; font-weight:700; letter-spacing:1px; color:#AAA;">
           <span class="category-article active" style="width:45%; margin:0; padding:0; display:inline-block;">最新收录</span>
           <span style="width:45%; margin:0; padding:0; display:inline-block;">最受欢迎</span>
         </div>
@@ -327,7 +327,9 @@ export default {
   .category-article {
     position: relative;
   }
-
+  .category-article.active {
+    color:#DDD;
+  }
   .category-article.active:after {
     content:'';
     width:100%;
