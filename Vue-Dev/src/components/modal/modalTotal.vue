@@ -11,12 +11,14 @@
 
 <script>
 import warning from './type/warning.vue'
+import comment from './type/comment.vue'
 import cover from './cover.vue'
 
 export default {
   name: 'modal-total',
   components: {
     warning,
+    comment,
     cover
   },
 
