@@ -21,25 +21,25 @@
       <div class="glass-bg" style="width:100%; height:100%;overflow-y:auto; box-sizing:border-box; position:relative; z-index:-1;">
         <ul style="margin:8px auto 138px;">
           <li class="box-shadow">
-            <router-link to="/" style="width:100%; height:38px; margin:8px auto 1px; display:inline-block; font-size:23px; font-weight:700; color:#999; letter-spacing:1.5px;">新建文章</router-link>
+            <router-link to="/" style="width:100%; height:35px; margin:8px auto 1px; display:inline-block; font-size:21px; font-weight:700; color:#999; letter-spacing:1.5px;">新建文章</router-link>
           </li>
           <li class="box-shadow">
-            <router-link to="/" style="width:100%; height:38px; margin:8px auto 1px; display:inline-block; font-size:23px; font-weight:700; color:#999; letter-spacing:1.5px;">新建文章</router-link>
+            <router-link to="/" style="width:100%; height:35px; margin:8px auto 1px; display:inline-block; font-size:21px; font-weight:700; color:#999; letter-spacing:1.5px;">新建文章</router-link>
           </li>
           <li class="box-shadow">
-            <router-link to="/" style="width:100%; height:38px; margin:8px auto 1px; display:inline-block; font-size:23px; font-weight:700; color:#999; letter-spacing:1.5px;">新建文章</router-link>
+            <router-link to="/" style="width:100%; height:35px; margin:8px auto 1px; display:inline-block; font-size:21px; font-weight:700; color:#999; letter-spacing:1.5px;">新建文章</router-link>
           </li>
           <li class="box-shadow">
-            <router-link to="/" style="width:100%; height:38px; margin:8px auto 1px; display:inline-block; font-size:23px; font-weight:700; color:#999; letter-spacing:1.5px;">新建文章</router-link>
+            <router-link to="/" style="width:100%; height:35px; margin:8px auto 1px; display:inline-block; font-size:21px; font-weight:700; color:#999; letter-spacing:1.5px;">新建文章</router-link>
           </li>
           <li class="box-shadow">
-            <router-link to="/" style="width:100%; height:38px; margin:8px auto 1px; display:inline-block; font-size:23px; font-weight:700; color:#999; letter-spacing:1.5px;">新建文章</router-link>
+            <router-link to="/" style="width:100%; height:35px; margin:8px auto 1px; display:inline-block; font-size:21px; font-weight:700; color:#999; letter-spacing:1.5px;">新建文章</router-link>
           </li>
           <li class="box-shadow">
-            <router-link to="/" style="width:100%; height:38px; margin:8px auto 1px; display:inline-block; font-size:23px; font-weight:700; color:#999; letter-spacing:1.5px;">新建文章</router-link>
+            <router-link to="/" style="width:100%; height:35px; margin:8px auto 1px; display:inline-block; font-size:21px; font-weight:700; color:#999; letter-spacing:1.5px;">新建文章</router-link>
           </li>
           <li class="box-shadow">
-            <router-link to="/" style="width:100%; height:38px; margin:8px auto 1px; display:inline-block; font-size:23px; font-weight:700; color:#999; letter-spacing:1.5px;">新建文章</router-link>
+            <router-link to="/" style="width:100%; height:35px; margin:8px auto 1px; display:inline-block; font-size:21px; font-weight:700; color:#999; letter-spacing:1.5px;">新建文章</router-link>
           </li>
         </ul>
       </div>
