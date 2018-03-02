@@ -1,19 +1,6 @@
 <template>
   <div>
-    <slide-box style="width:92%; height:188px; margin:0 auto;"/>
-
-    <router-link to="/m">index</router-link>
-    <router-link to="/m/user">user</router-link>
-    <router-link to="/m/category">category</router-link>
-    <router-link to="/m/article">article</router-link>
-    <router-link to="/m/search">search</router-link>
-    <router-link to="/m/write">write</router-link><hr/>
-
-    <button @click="testModal('warning')" style="padding:2px 5px; font-size:18px;">Test Warning</button>
-    <button @click="testModal('login')" style="padding:2px 5px; font-size:18px;">Test Login</button>
-    <button @click="testModal('register')" style="padding:2px 5px; font-size:18px;">Test Register</button>
-
-    <hr/>
+    <slide-box class="glass-bg box-show" style="width:92%; height:188px; padding:6px; box-sizing:border-box; margin:0 auto 18px;"/>
 
     <div class="glass-bg box-show" style="width:92%; margin:8px auto;">
       <ul>

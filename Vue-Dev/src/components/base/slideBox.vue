@@ -14,7 +14,7 @@
 
 <script>
 import 'swiper/dist/css/swiper.css'
-import {swiper, swiperSlide} from 'vue-awesome-swiper'
+import { swiper, swiperSlide } from 'vue-awesome-swiper'
 
 export default {
   name: 'slide-box',
@@ -30,7 +30,16 @@ export default {
         pagination: {
           el: '.swiper-pagination'
         },
-        autoplay: true, // 自动滑动
+
+        autoplay: {
+          delay: 3000,
+          stopOnLastSlide: false,
+          disableOnInteraction: false,
+          // autoplayDisableOnInteraction: false
+        },
+
+        passiveListeners: false,
+
         loop: true, // 循环
         lazy: {
           loadPrevNext: true,
@@ -56,5 +65,24 @@ export default {
 </script>
 
 <style scoped>
-
+  .swiper-pagination-bullets {
+    width:38%;
+    left:50%;
+    height:18px;
+    line-height:13px;
+    transform:translate(-50%, 38%);
+    background: rgba(108, 108, 108, 0.6);
+    border-radius:3px;
+    display:inline-block!important;
+    box-shadow: 0 0 1px #24c9ff;
+  }
+  .swiper-pagination >>> .swiper-pagination-bullet {
+    background: #9f8bff;
+    opacity:1;
+    border-radius:0;
+  }
+  .swiper-pagination >>> .swiper-pagination-bullet-active {
+    width:16px;
+    background:#24C9FF;
+  }
 </style>

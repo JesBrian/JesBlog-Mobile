@@ -49,7 +49,7 @@
             <router-link to="/m/user" style="height:28px; margin-left:28px; display:inline-block; float:left; position:relative;">
               <img v-lazy="this.$store.state.baseHost + 'img/touxiang.jpg'" style="width:28px; height:100%; margin-right:8px; border-radius:50%; float:left;"/>
               <p style="float:left; display:inline-block; font-size:18px; line-height:19px; color:#DDD;">Username：</p>
-              <p style="width:102px; top:16.5px; left:38px; position:absolute; text-align:left; font-size:13px; color:#999;">2018/12/12 12:12</p>
+              <p style="width:118px; top:16.5px; left:38px; position:absolute; text-align:left; font-size:13px; color:#999;">2018/12/12 12:12</p>
             </router-link>
             <span style="top:-4px; right:8%; position:absolute; color:#CCC; font-size:19px;">
               233<i class="MyIF non-collection" style="margin-left:5px; font-size:19px;"></i>
@@ -66,121 +66,7 @@
             <router-link to="/m/user" style="height:28px; margin-left:28px; display:inline-block; float:left; position:relative;">
               <img v-lazy="this.$store.state.baseHost + 'img/touxiang.jpg'" style="width:28px; height:100%; margin-right:8px; border-radius:50%; float:left;"/>
               <p style="float:left; display:inline-block; font-size:18px; line-height:19px; color:#DDD;">Username：</p>
-              <p style="width:102px; top:16.5px; left:38px; position:absolute; text-align:left; font-size:13px; color:#999;">2018/12/12 12:12</p>
-            </router-link>
-            <span style="top:-4px; right:8%; position:absolute; color:#CCC; font-size:19px;">
-              233<i class="MyIF non-collection" style="margin-left:5px; font-size:19px;"></i>
-            </span>
-            <div style="width:90%; margin:0 auto; padding:36px 0 12px;">
-              <div style="width:100%; height:100%; padding-left:22px; box-sizing:border-box; text-align:left; font-size:17px; color:#BBB;">
-                <p @click="createComment">围IC不好意思出版社初步设计chjk宠物狗jnc初完成了好久</p>
-                <div class="box-show" style="width:100%; margin-top:4px; padding:4px 8px 6px; margin-left:-16px; background:#252525;">
-                  <router-link to="/m/user" style="font-size:18px; color:#DDD;">Other Username：</router-link>
-                  <p @click="createComment" style="text-indent:1em;">超级肥妻处理器出来就是我</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="box-shadow">
-          <div style="width:100%; margin:0 auto 12px; position:relative;">
-            <router-link to="/m/user" style="height:28px; margin-left:28px; display:inline-block; float:left; position:relative;">
-              <img v-lazy="this.$store.state.baseHost + 'img/touxiang.jpg'" style="width:28px; height:100%; margin-right:8px; border-radius:50%; float:left;"/>
-              <p style="float:left; display:inline-block; font-size:18px; line-height:19px; color:#DDD;">Username：</p>
-              <p style="width:102px; top:16.5px; left:38px; position:absolute; text-align:left; font-size:13px; color:#999;">2018/12/12 12:12</p>
-            </router-link>
-            <span style="top:-4px; right:8%; position:absolute; color:#CCC; font-size:19px;">
-              233<i class="MyIF non-collection" style="margin-left:5px; font-size:19px;"></i>
-            </span>
-            <div style="width:90%; margin:0 auto; padding:36px 0 12px;">
-              <div style="width:100%; height:100%; padding-left:22px; box-sizing:border-box; text-align:left; font-size:17px; color:#BBB;">
-                <p @click="createComment">xajxnan是百分百想办法差相处不错传步设计chjk宠物狗jnc初完范围c初完成了好久</p>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="box-shadow">
-          <div style="width:100%; margin:0 auto 12px; position:relative;">
-            <router-link to="/m/user" style="height:28px; margin-left:28px; display:inline-block; float:left; position:relative;">
-              <img v-lazy="this.$store.state.baseHost + 'img/touxiang.jpg'" style="width:28px; height:100%; margin-right:8px; border-radius:50%; float:left;"/>
-              <p style="float:left; display:inline-block; font-size:18px; line-height:19px; color:#DDD;">Username：</p>
-              <p style="width:102px; top:16.5px; left:38px; position:absolute; text-align:left; font-size:13px; color:#999;">2018/12/12 12:12</p>
-            </router-link>
-            <span style="top:-4px; right:8%; position:absolute; color:#CCC; font-size:19px;">
-              233<i class="MyIF non-collection" style="margin-left:5px; font-size:19px;"></i>
-            </span>
-            <div style="width:90%; margin:0 auto; padding:36px 0 12px;">
-              <div style="width:100%; height:100%; padding-left:22px; box-sizing:border-box; text-align:left; font-size:17px; color:#BBB;">
-                <p @click="createComment">围IC不好意思出版社初步设计chjk宠物狗jnc初完成了好久</p>
-                <div class="box-show" style="width:100%; margin-top:4px; padding:4px 8px 6px; margin-left:-16px; background:#252525;">
-                  <router-link to="/m/user" style="font-size:18px; color:#DDD;">Other Username：</router-link>
-                  <p @click="createComment" style="text-indent:1em;">超级肥妻处理器出来就是我</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="box-shadow">
-          <div style="width:100%; margin:0 auto 12px; position:relative;">
-            <router-link to="/m/user" style="height:28px; margin-left:28px; display:inline-block; float:left; position:relative;">
-              <img v-lazy="this.$store.state.baseHost + 'img/touxiang.jpg'" style="width:28px; height:100%; margin-right:8px; border-radius:50%; float:left;"/>
-              <p style="float:left; display:inline-block; font-size:18px; line-height:19px; color:#DDD;">Username：</p>
-              <p style="width:102px; top:16.5px; left:38px; position:absolute; text-align:left; font-size:13px; color:#999;">2018/12/12 12:12</p>
-            </router-link>
-            <span style="top:-4px; right:8%; position:absolute; color:#CCC; font-size:19px;">
-              233<i class="MyIF non-collection" style="margin-left:5px; font-size:19px;"></i>
-            </span>
-            <div style="width:90%; margin:0 auto; padding:36px 0 12px;">
-              <div style="width:100%; height:100%; padding-left:22px; box-sizing:border-box; text-align:left; font-size:17px; color:#BBB;">
-                <p @click="createComment">xajxnan是百分百想办法差相处不错传步设计chjk宠物狗jnc初完范围c初完成了好久</p>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="box-shadow">
-          <div style="width:100%; margin:0 auto 12px; position:relative;">
-            <router-link to="/m/user" style="height:28px; margin-left:28px; display:inline-block; float:left; position:relative;">
-              <img v-lazy="this.$store.state.baseHost + 'img/touxiang.jpg'" style="width:28px; height:100%; margin-right:8px; border-radius:50%; float:left;"/>
-              <p style="float:left; display:inline-block; font-size:18px; line-height:19px; color:#DDD;">Username：</p>
-              <p style="width:102px; top:16.5px; left:38px; position:absolute; text-align:left; font-size:13px; color:#999;">2018/12/12 12:12</p>
-            </router-link>
-            <span style="top:-4px; right:8%; position:absolute; color:#CCC; font-size:19px;">
-              233<i class="MyIF non-collection" style="margin-left:5px; font-size:19px;"></i>
-            </span>
-            <div style="width:90%; margin:0 auto; padding:36px 0 12px;">
-              <div style="width:100%; height:100%; padding-left:22px; box-sizing:border-box; text-align:left; font-size:17px; color:#BBB;">
-                <p @click="createComment">围IC不好意思出版社初步设计chjk宠物狗jnc初完成了好久</p>
-                <div class="box-show" style="width:100%; margin-top:4px; padding:4px 8px 6px; margin-left:-16px; background:#252525;">
-                  <router-link to="/m/user" style="font-size:18px; color:#DDD;">Other Username：</router-link>
-                  <p @click="createComment" style="text-indent:1em;">超级肥妻处理器出来就是我</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="box-shadow">
-          <div style="width:100%; margin:0 auto 12px; position:relative;">
-            <router-link to="/m/user" style="height:28px; margin-left:28px; display:inline-block; float:left; position:relative;">
-              <img v-lazy="this.$store.state.baseHost + 'img/touxiang.jpg'" style="width:28px; height:100%; margin-right:8px; border-radius:50%; float:left;"/>
-              <p style="float:left; display:inline-block; font-size:18px; line-height:19px; color:#DDD;">Username：</p>
-              <p style="width:102px; top:16.5px; left:38px; position:absolute; text-align:left; font-size:13px; color:#999;">2018/12/12 12:12</p>
-            </router-link>
-            <span style="top:-4px; right:8%; position:absolute; color:#CCC; font-size:19px;">
-              233<i class="MyIF non-collection" style="margin-left:5px; font-size:19px;"></i>
-            </span>
-            <div style="width:90%; margin:0 auto; padding:36px 0 12px;">
-              <div style="width:100%; height:100%; padding-left:22px; box-sizing:border-box; text-align:left; font-size:17px; color:#BBB;">
-                <p @click="createComment">xajxnan是百分百想办法差相处不错传步设计chjk宠物狗jnc初完范围c初完成了好久</p>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="box-shadow">
-          <div style="width:100%; margin:0 auto 12px; position:relative;">
-            <router-link to="/m/user" style="height:28px; margin-left:28px; display:inline-block; float:left; position:relative;">
-              <img v-lazy="this.$store.state.baseHost + 'img/touxiang.jpg'" style="width:28px; height:100%; margin-right:8px; border-radius:50%; float:left;"/>
-              <p style="float:left; display:inline-block; font-size:18px; line-height:19px; color:#DDD;">Username：</p>
-              <p style="width:102px; top:16.5px; left:38px; position:absolute; text-align:left; font-size:13px; color:#999;">2018/12/12 12:12</p>
+              <p style="width:118px; top:16.5px; left:38px; position:absolute; text-align:left; font-size:13px; color:#999;">2018/12/12 12:12</p>
             </router-link>
             <span style="top:-4px; right:8%; position:absolute; color:#CCC; font-size:19px;">
               233<i class="MyIF non-collection" style="margin-left:5px; font-size:19px;"></i>
