@@ -4,7 +4,7 @@
     <!-- 作者信息 -->
     <div style="width:100%; height:38px;">
       <img v-lazy="this.$store.state.baseHost + 'img/touxiang.jpg'" style="width:22px; height:22px; margin:4px 8px 8px 15px; float:left; border-radius:50%;"/>
-      <router-link to="/m/user" style="float:left; color:#AAA; font-size:15px; line-height:33px;">的性格和想法寒假寒假</router-link>
+      <router-link to="/m/author" style="float:left; color:#AAA; font-size:15px; line-height:33px;">的性格和想法寒假寒假</router-link>
     </div>
     <!-- 文章信息 -->
     <router-link to="/m/article" style="width:100%; display:inline-block; position:relative;">

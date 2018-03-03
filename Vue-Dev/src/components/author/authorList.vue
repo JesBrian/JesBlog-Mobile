@@ -1,19 +1,19 @@
 <template>
   <ul style="width:94%; margin:0 auto;">
     <li v-for="n in 10" :key="n">
-      <category-cell />
+      <author-cell />
     </li>
   </ul>
 </template>
 
 <script>
-import categoryCell from '@/components/category/categoryCell.vue'
+import authorCell from '@/components/author/authorCell.vue'
 
 export default {
-  name: 'category-list',
+  name: 'author-list',
 
   components: {
-    categoryCell
+    authorCell
   }
 }
 </script>

@@ -5,7 +5,7 @@ import index from '@/views/type/index.vue'
 import categoryList from '@/views/type/categoryList.vue'
 import authorList from '@/views/type/authorList.vue'
 import articleManagement from '@/views/type/articleManagement.vue'
-import user from '@/views/type/user.vue'
+import author from '@/views/type/author.vue'
 import update from '@/views/type/update.vue'
 import article from '@/views/type/article.vue'
 import category from '@/views/type/category.vue'
@@ -47,8 +47,8 @@ export default new Router({
           component: articleManagement
         },
         {
-          path: 'user',
-          component: user
+          path: 'author',
+          component: author
         },
         {
           path: 'update',
