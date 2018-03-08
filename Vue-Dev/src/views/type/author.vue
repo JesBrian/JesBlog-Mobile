@@ -14,15 +14,15 @@
       </div>
 
       <div style="margin-top:6px; position:relative">
-        <div style="width:100%; height:48px; padding:0 88px 0 23px; box-sizing:border-box; line-height:48px; font-size:19px; font-weight:700; letter-spacing:1px; color:#AAA;">
-          <span class="category-article active" style="width:23%; margin:0; padding:0; display:inline-block;">简介</span>
-          <span style="width:23%; margin:0; padding:0; display:inline-block;">文章</span>
+        <div style="width:100%; height:48px; padding:0 62px 0 20px; box-sizing:border-box; line-height:48px; font-size:19px; font-weight:700; letter-spacing:1px; color:#AAA;">
+          <span style="width:23%; margin:0; padding:0; display:inline-block;">简介</span>
+          <span class="category-article active" style="width:23%; margin:0; padding:0; display:inline-block;">文章</span>
           <span style="width:23%; margin:0; padding:0; display:inline-block;">粉丝</span>
           <span style="width:23%; margin:0; padding:0; display:inline-block;">评论</span>
         </div>
 
-        <span class="super-btn-out" style="width:40px; height:40px; top:3px; right:20px; position:absolute;">
-          <span class="super-btn-in MyIF non-collection" style="width:28px; height:28px; top:49%; font-size:25px; line-height:30px;"></span>
+        <span class="super-btn-out" style="width:32px; height:32px; top:3px; right:18px; position:absolute;">
+          <span class="super-btn-in MyIF non-collection" style="width:25px; height:25px; top:49%; font-size:23px; line-height:25px;"></span>
         </span>
       </div>
 

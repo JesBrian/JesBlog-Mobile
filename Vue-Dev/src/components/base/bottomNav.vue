@@ -7,7 +7,7 @@
       </router-link>
 
       <router-link to="/m/index" style="width:25%; height:100%; margin-left:10%; float:left; color:#CCC; font-size:20px;"><i class="MyIF XCX" style="margin-right:6px; font-size:20px; color:#32beff;"></i>发现</router-link>
-      <router-link to="/m/user" style="width:25%; height:100%; margin-right:10%; float:right; color:#CCC; font-size:20px;"><i class="MyIF gear" style="margin-right:6px; font-size:20px; color:#32beff;"></i>个人</router-link>
+      <router-link to="/m/author" style="width:25%; height:100%; margin-right:10%; float:right; color:#CCC; font-size:20px;"><i class="MyIF gear" style="margin-right:6px; font-size:20px; color:#32beff;"></i>个人</router-link>
     </div>
 
     <div v-else>
@@ -16,7 +16,7 @@
       </router-link>
 
       <router-link to="/m/index" style="width:25%; height:100%; margin-left:10%; float:left; color:#CCC; font-size:20px;"><i class="MyIF XCX" style="margin-right:6px; font-size:20px; color:#32beff;"></i>发现</router-link>
-      <router-link to="/m/user" style="width:25%; height:100%; margin-right:10%; float:right; color:#CCC; font-size:20px;"><i class="MyIF gear" style="margin-right:6px; font-size:20px; color:#32beff;"></i>个人</router-link>
+      <router-link to="/m/author" style="width:25%; height:100%; margin-right:10%; float:right; color:#CCC; font-size:20px;"><i class="MyIF gear" style="margin-right:6px; font-size:20px; color:#32beff;"></i>个人</router-link>
     </div>
 
   </div>

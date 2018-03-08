@@ -2,13 +2,13 @@
   <div>
     <div class="glass-bg box-show" style="width:92%; margin:0 auto; padding:8px 4px; box-sizing:border-box;">
 
-      <span class="super-btn-out" style="width:36px; height:36px; margin:0 3px 3px 6px; float:right;">
-        <span class="super-btn-in MyIF follow" style="width:28px; height:28px; font-size:24px; line-height:28px; text-align:center;"></span>
+      <span class="super-btn-out" style="width:32px; height:32px; margin:0 3px 3px 6px; float:right;">
+        <span class="super-btn-in MyIF follow" style="width:24px; height:25px; font-size:24px; line-height:25px; text-align:center;"></span>
       </span>
       <p style="margin-left:12px; font-size:24px; color:#DDD; text-align:left; letter-spacing:1px; text-indent:1em;">文章标题文章标题文章标题文章标题</p>
 
       <div style="width:92%; height:42px; margin:8px auto; position:relative;">
-        <router-link to="/m/user" style="display:inline-block; float:left;">
+        <router-link to="/m/author" style="display:inline-block; float:left;">
           <img v-lazy="this.$store.state.baseHost + 'img/touxiang.jpg'" style="width:38px; height:38px; margin:3px 12px 0 0; float:left; border-radius:4px;"/>
           <span style="color:#BBB; font-size:18px;">JesBrian</span>
         </router-link>
@@ -46,7 +46,7 @@
       <ul>
         <li class="box-shadow">
           <div style="width:100%; margin:0 auto 12px; position:relative;">
-            <router-link to="/m/user" style="height:28px; margin-left:28px; display:inline-block; float:left; position:relative;">
+            <router-link to="/m/author" style="height:28px; margin-left:28px; display:inline-block; float:left; position:relative;">
               <img v-lazy="this.$store.state.baseHost + 'img/touxiang.jpg'" style="width:28px; height:100%; margin-right:8px; border-radius:50%; float:left;"/>
               <p style="float:left; display:inline-block; font-size:18px; line-height:19px; color:#DDD;">Username：</p>
               <p style="width:118px; top:16.5px; left:38px; position:absolute; text-align:left; font-size:13px; color:#999;">2018/12/12 12:12</p>
@@ -63,7 +63,7 @@
         </li>
         <li class="box-shadow">
           <div style="width:100%; margin:0 auto 12px; position:relative;">
-            <router-link to="/m/user" style="height:28px; margin-left:28px; display:inline-block; float:left; position:relative;">
+            <router-link to="/m/author" style="height:28px; margin-left:28px; display:inline-block; float:left; position:relative;">
               <img v-lazy="this.$store.state.baseHost + 'img/touxiang.jpg'" style="width:28px; height:100%; margin-right:8px; border-radius:50%; float:left;"/>
               <p style="float:left; display:inline-block; font-size:18px; line-height:19px; color:#DDD;">Username：</p>
               <p style="width:118px; top:16.5px; left:38px; position:absolute; text-align:left; font-size:13px; color:#999;">2018/12/12 12:12</p>
@@ -75,7 +75,7 @@
               <div style="width:100%; height:100%; padding-left:22px; box-sizing:border-box; text-align:left; font-size:17px; color:#BBB;">
                 <p @click="createComment">围IC不好意思出版社初步设计chjk宠物狗jnc初完成了好久</p>
                 <div class="box-show" style="width:100%; margin-top:4px; padding:4px 8px 6px; margin-left:-16px; background:#252525;">
-                  <router-link to="/m/user" style="font-size:18px; color:#DDD;">Other Username：</router-link>
+                  <router-link to="/m/author" style="font-size:18px; color:#DDD;">Other Username：</router-link>
                   <p @click="createComment" style="text-indent:1em;">超级肥妻处理器出来就是我</p>
                 </div>
               </div>

@@ -12,7 +12,8 @@ Vue.config.productionTip = false
 
 // axios.defaults.withCredentials = true
 // axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
-axios.defaults.baseURL = store.state.baseHost + 'index.php/'
+// axios.defaults.baseURL = store.state.baseHost + 'index.php/'
+axios.defaults.baseURL = store.state.baseHost // 服务器生产环境部署配置 axios ajax 域名
 Vue.prototype.axios = axios
 Vue.use(vueLazyload, {
   error: store.state.baseHost + 'img/loading.svg',

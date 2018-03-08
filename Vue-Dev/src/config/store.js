@@ -5,7 +5,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    baseHost: 'http://jesbrian.cn/JesBlog-Backstage/web/',
+    // baseHost: 'http://jesbrian.cn/JesBlog-Backstage/web/',
+    baseHost: 'http://blog.jesbrian.cn/', // 服务器生产环境部署配置域名
     modalType: '',
     tips: '',
     showUserLeftMenu: false,

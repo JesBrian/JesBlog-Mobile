@@ -16,7 +16,7 @@
     <div v-else-if="this.$route.path === '/m/update'">
       <p style="line-height:53px; color:#CCC; font-size:28px; letter-spacing:2px; font-weight:700;">更新资料</p>
     </div>
-    <div v-else-if="this.$route.path === '/m/user'">
+    <div v-else-if="this.$route.path === '/m/author'">
       <p style="line-height:53px; color:#CCC; font-size:28px; letter-spacing:2px; font-weight:700;">作者信息</p>
     </div>
     <div v-else-if="this.$route.path === '/m/category'">

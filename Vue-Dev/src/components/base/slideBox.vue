@@ -75,6 +75,7 @@ export default {
     border-radius:3px;
     display:inline-block!important;
     box-shadow: 0 0 1px #24c9ff;
+    box-sizing:border-box;
   }
   .swiper-pagination >>> .swiper-pagination-bullet {
     background: #9f8bff;

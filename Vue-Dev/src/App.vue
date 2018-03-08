@@ -143,7 +143,7 @@ export default {
     user-select: none;
   }
   .super-btn-in {
-    top: 50%;
+    top: 49%;
     left: 50%;
     padding: 0;
     display: inline-block;
