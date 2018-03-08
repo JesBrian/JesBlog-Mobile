@@ -12,6 +12,7 @@
 <script>
 import warning from './type/warning.vue'
 import comment from './type/comment.vue'
+import articleType from './type/articleType.vue'
 import cover from './cover.vue'
 
 export default {
@@ -19,6 +20,7 @@ export default {
   components: {
     warning,
     comment,
+    articleType,
     cover
   },
 
