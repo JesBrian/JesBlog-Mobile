@@ -180,10 +180,4 @@ export default {
     background: #2E2E2E;
   }
 
-  #viewsBody {
-    width: 100%;
-    display: inline-block;
-    background: #444;
-    margin: 0 auto;
-  }
 </style>

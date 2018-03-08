@@ -65,25 +65,25 @@ export default {
 </script>
 
 <style scoped>
-  .swiper-pagination-bullets {
-    width:38%;
-    left:50%;
-    height:18px;
-    line-height:13px;
-    transform:translate(-50%, 38%);
-    background: rgba(108, 108, 108, 0.6);
-    border-radius:3px;
-    display:inline-block!important;
-    box-shadow: 0 0 1px #24c9ff;
-    box-sizing:border-box;
-  }
+  /*.swiper-pagination-bullets {*/
+    /*width:38%;*/
+    /*left:50%;*/
+    /*height:18px;*/
+    /*line-height:13px;*/
+    /*transform:translate(-50%, 38%);*/
+    /*background: rgba(108, 108, 108, 0.6);*/
+    /*border-radius:3px;*/
+    /*display:inline-block!important;*/
+    /*box-shadow: 0 0 1px #24c9ff;*/
+    /*box-sizing:border-box;*/
+  /*}*/
   .swiper-pagination >>> .swiper-pagination-bullet {
-    background: #9f8bff;
+    background: #459bff;
     opacity:1;
-    border-radius:0;
+    border-radius:8px;
   }
   .swiper-pagination >>> .swiper-pagination-bullet-active {
     width:16px;
-    background:#24C9FF;
+    background:#4DD8FF;
   }
 </style>

@@ -38,7 +38,7 @@
     <div v-else style="width:100%; height:38px; margin-top:6px; padding-left:58px; float:right; box-sizing:border-box;">
       <div class="glass-bg box-show" style="width:98%; height:100%; position:relative;">
         <label style="width:100%; height:100%; padding:5px 38px 5px 6px; display:inline-block; box-sizing:border-box;">
-          <input type="text" style="width:100%; height:100%; padding:0 8px; box-sizing:border-box; background:#444; font-size:18px; letter-spacing:1px; color:#CCC;"/>
+          <input v-focus type="text" style="width:100%; height:100%; padding:0 8px; box-sizing:border-box; border:1px solid #222; background:#444; font-size:18px; letter-spacing:1px; color:#CCC;"/>
         </label>
         <span class="super-btn-out" style="width:28px; height:28px; top:3px; right:3px; position:absolute;">
           <span class="super-btn-in MyIF search" style="width:22px; height:22px; line-height:23px; font-size:16px;"></span>
@@ -52,6 +52,10 @@
 <script>
 export default {
   name: 'top-nav',
+
+  mounted () {
+    // document.getElementById('search').focus()
+  },
 
   methods: {
     changeUserMenuShow () {
@@ -67,5 +71,20 @@ export default {
   }
   .MyIF.router-link-active {
     color:#44D5FF; border-bottom:2px solid #9F8BFF;
+  }
+
+  input:focus {
+    border-color:#2af1fc!important;
+    animation: glow 666ms ease-out infinite alternate;
+  }
+  @keyframes glow {
+    0% {
+      border-color: #22E8FF;
+      box-shadow: 0 0 5px rgba(87, 228, 255, 0.2), inset 0 0 5px rgba(46, 231, 255, 0.1), 0 2px 0 #000;
+    }
+    100% {
+      border-color: #30CDFF;
+      box-shadow: 0 0 20px rgba(46, 231, 255, 0.6), inset 0 0 10px rgba(46, 231, 255, 0.4), 0 2px 0 #000;
+    }
   }
 </style>

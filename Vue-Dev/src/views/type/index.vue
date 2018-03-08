@@ -2,7 +2,7 @@
   <div>
     <slide-box class="glass-bg box-show" style="width:92%; height:188px; padding:6px; box-sizing:border-box; margin:0 auto 18px;"/>
 
-    <div class="glass-bg box-show" style="width:92%; margin:8px auto;">
+    <div class="glass-bg box-show" style="width:92%; margin:8px auto 0;">
       <article-list />
     </div>
   </div>

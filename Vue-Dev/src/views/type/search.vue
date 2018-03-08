@@ -47,28 +47,28 @@
           <table style="width:100%; height:58px; margin:6px 0;">
             <tr>
               <td style="width:25%;">
-                <router-link to="/m/author" style="width:42px; height:42px; display:inline-block;">
+                <router-link to="/m/category" style="width:42px; height:42px; display:inline-block;">
                   <img v-lazy="this.$store.state.baseHost + 'img/touxiang.jpg'" style="width:100%; height:100%; border-radius:3px;"/>
                 </router-link>
-                <router-link to="/m/author" style="min-width:50px; max-width:92%; height:19px; margin:0 auto; display:inline-block; box-shadow:0 0 2px #46dfff; color:#CCC; line-height:20px; font-size:15px;">456</router-link>
+                <router-link to="/m/category" style="min-width:50px; max-width:92%; height:19px; margin:0 auto; display:inline-block; box-shadow:0 0 2px #46dfff; color:#CCC; line-height:20px; font-size:15px;">456</router-link>
               </td>
               <td style="width:25%;">
-                <router-link to="/m/author" style="width:42px; height:42px; display:inline-block;">
+                <router-link to="/m/category" style="width:42px; height:42px; display:inline-block;">
                   <img v-lazy="this.$store.state.baseHost + 'img/touxiang.jpg'" style="width:100%; height:100%; border-radius:3px;"/>
                 </router-link>
-                <router-link to="/m/author" style="min-width:50px; max-width:92%; height:18px; margin:0 auto; display:inline-block; box-shadow:0 0 2px #46dfff; color:#CCC; line-height:20px; font-size:15px;">456</router-link>
+                <router-link to="/m/category" style="min-width:50px; max-width:92%; height:18px; margin:0 auto; display:inline-block; box-shadow:0 0 2px #46dfff; color:#CCC; line-height:20px; font-size:15px;">456</router-link>
               </td>
               <td style="width:25%;">
-                <router-link to="/m/author" style="width:42px; height:42px; display:inline-block;">
+                <router-link to="/m/category" style="width:42px; height:42px; display:inline-block;">
                   <img v-lazy="this.$store.state.baseHost + 'img/touxiang.jpg'" style="width:100%; height:100%; border-radius:3px;"/>
                 </router-link>
-                <router-link to="/m/author" style="min-width:50px; max-width:92%; height:19px; margin:0 auto; display:inline-block; box-shadow:0 0 2px #46dfff; color:#CCC; line-height:20px; font-size:15px;">456</router-link>
+                <router-link to="/m/category" style="min-width:50px; max-width:92%; height:19px; margin:0 auto; display:inline-block; box-shadow:0 0 2px #46dfff; color:#CCC; line-height:20px; font-size:15px;">456</router-link>
               </td>
               <td style="width:25%;">
-                <router-link to="/m/author" style="width:42px; height:42px; display:inline-block;">
+                <router-link to="/m/category" style="width:42px; height:42px; display:inline-block;">
                   <img v-lazy="this.$store.state.baseHost + 'img/touxiang.jpg'" style="width:100%; height:100%; border-radius:3px;"/>
                 </router-link>
-                <router-link to="/m/author" style="min-width:50px; max-width:92%; height:19px; margin:0 auto; display:inline-block; box-shadow:0 0 2px #46dfff; color:#CCC; line-height:20px; font-size:15px;">456</router-link>
+                <router-link to="/m/category" style="min-width:50px; max-width:92%; height:19px; margin:0 auto; display:inline-block; box-shadow:0 0 2px #46dfff; color:#CCC; line-height:20px; font-size:15px;">456</router-link>
               </td>
             </tr>
           </table>

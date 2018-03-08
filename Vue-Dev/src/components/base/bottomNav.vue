@@ -1,5 +1,5 @@
 <template>
-  <div class="glass-bg box-show" style="width:100%; height:38px; bottom:0; left:0; position:fixed; z-index:55; box-sizing:border-box; border-radius:0; line-height:38px;">
+  <div id="bottomNav" class="glass-bg box-show" style="width:100%; height:38px; top:100%; left:0; position:fixed; z-index:55; box-sizing:border-box; border-radius:0; line-height:38px;">
 
     <div v-if="this.$route.path !== '/m/write'" style="width:100%; height:100%;">
       <router-link class="super-btn-out" to="/m/write" style="width:43px; height:43px; top:-12px; left:50%; transform:translate(-50%, 0); position:absolute; z-index:9; border-radius:50%;">
@@ -24,7 +24,11 @@
 
 <script>
 export default {
-  name: 'bottom-nav'
+  name: 'bottom-nav',
+
+  mounted () {
+    document.getElementById('bottomNav').style.top = document.documentElement.clientHeight - 39 + 'px'
+  }
 }
 </script>
 

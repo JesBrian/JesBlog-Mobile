@@ -18,8 +18,8 @@
           <span class="category-article active" style="width:45%; margin:0; padding:0; display:inline-block;">最新收录</span>
           <span style="width:45%; margin:0; padding:0; display:inline-block;">最受欢迎</span>
         </div>
-        <span class="super-btn-out" style="width:40px; height:40px; top:3px; right:20px; position:absolute;">
-          <span class="super-btn-in MyIF non-collection" style="width:28px; height:28px; top:49%; font-size:25px; line-height:30px;"></span>
+        <span class="super-btn-out" style="width:32px; height:32px; top:3px; right:20px; position:absolute;">
+          <span class="super-btn-in MyIF non-collection" style="width:24px; height:24px; top:49%; font-size:24px; line-height:25px;"></span>
         </span>
       </div>
 

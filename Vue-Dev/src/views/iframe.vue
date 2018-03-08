@@ -1,24 +1,20 @@
 <template>
   <!-- 框架页面 -->
   <div>
-    <div id="viewsBody">
+    <!-- 顶部导航条 -->
+    <top-nav/>
 
-      <!-- 顶部导航条 -->
-      <top-nav/>
+    <!-- 用户菜单 -->
+    <user-left-menu/>
 
-      <!-- 用户菜单 -->
-      <user-left-menu/>
+    <!--  -->
+    <float-block/>
 
-      <!--  -->
-      <float-block/>
-
-      <!-- 底部导航条 -->
-      <bottom-nav/>
-
-    </div>
+    <!-- 底部导航条 -->
+    <bottom-nav/>
 
     <!-- 二级路由 -->
-    <router-view style="padding:45px 0 56px;"/>
+    <router-view style="padding:72px 0 56px;"/>
 
     <!-- 拟态框 -->
     <modal/>
