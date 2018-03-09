@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="glass-bg box-show" style="width:92%; margin:0 auto; padding:8px 4px; box-sizing:border-box;">
+    <div class="glass-bg box-show" style="width:92%; margin:0 auto; padding:8px 0; box-sizing:border-box;">
 
-      <span class="super-btn-out" style="width:32px; height:32px; margin:0 3px 3px 6px; float:right;">
+      <span class="super-btn-out" style="width:32px; height:32px; margin:0 8px 3px 6px; float:right;">
         <span class="super-btn-in MyIF follow" style="width:24px; height:25px; font-size:24px; line-height:26px; text-align:center;"></span>
       </span>
       <p style="margin-left:12px; font-size:22px; color:#DDD; text-align:left; letter-spacing:1px; text-indent:1em;">文章标题文章标题文章标题文章标题</p>
