@@ -11,7 +11,7 @@
     <close-button/>
 
     <div style="width:100%;">
-      <textarea class="cube-bg box-show" style="width:88%; height:93px; resize:none;"></textarea>
+      <textarea class="cube-bg box-show" v-focus style="width:88%; height:93px; resize:none;"></textarea>
 
       <div style="width:88%; margin:8px auto; text-align:left;">
         <i class="MyIF happy" style="margin-left:8px; line-height:23px; font-size:20px;"></i>

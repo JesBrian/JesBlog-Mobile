@@ -24,15 +24,15 @@
         <!--</span>-->
       </div>
 
-      <div style="width:92%; margin:8px auto 28px; position:relative; text-align:right; font-size:14px; line-height:21px;">
+      <div style="width:92%; margin:8px auto 28px; position:relative; text-align:right; font-size:14px; line-height:22px;">
         <router-link class="cube-bg box-show" to="/m/category" style="width:80px; height:21px; position:relative; margin-right:18px; display:inline-block; color:#AAA; text-align:left; text-indent:16px;">
-          <img v-lazy="require('@/assets/img/tag/tag1.png')" style="width:26px; height:28px; top:-4px; left:-15px; position:absolute;"/>假的v
+          <img v-lazy="require('@/assets/img/tag/tag1.png')" style="width:25px; height:26px; top:-3px; left:-15px; position:absolute;"/>假的v
         </router-link>
         <router-link class="cube-bg box-show" to="/m/category" style="width:80px; height:21px; position:relative; margin-right:18px; display:inline-block; color:#AAA; text-align:left; text-indent:16px;">
-          <img v-lazy="require('@/assets/img/tag/tag2.png')" style="width:26px; height:28px; top:-4px; left:-15px; position:absolute;"/>xxx
+          <img v-lazy="require('@/assets/img/tag/tag2.png')" style="width:25px; height:26px; top:-3px; left:-15px; position:absolute;"/>xxx
         </router-link>
         <router-link class="cube-bg box-show" to="/m/category" style="width:80px; height:21px; position:relative; display:inline-block; color:#AAA; text-align:left; text-indent:16px;">
-          <img v-lazy="require('@/assets/img/tag/tag3.png')" style="width:26px; height:28px; top:-4px; left:-15px; position:absolute;"/>xxx
+          <img v-lazy="require('@/assets/img/tag/tag3.png')" style="width:25px; height:26px; top:-3px; left:-15px; position:absolute;"/>xxx
         </router-link>
       </div>
 

@@ -13,8 +13,8 @@
         </p>
       </div>
 
-      <div style="margin-top:6px; position:relative">
-        <div style="width:100%; height:48px; padding:0 62px 0 20px; box-sizing:border-box; line-height:48px; font-size:19px; font-weight:700; letter-spacing:1px; color:#AAA;">
+      <div style="margin-top:16px; position:relative">
+        <div style="width:100%; height:38px; padding:0 62px 0 20px; box-sizing:border-box; line-height:38px; font-size:17px; font-weight:700; letter-spacing:1px; color:#AAA;">
           <span style="width:23%; margin:0; padding:0; display:inline-block;">简介</span>
           <span class="category-article active" style="width:23%; margin:0; padding:0; display:inline-block;">文章</span>
           <span style="width:23%; margin:0; padding:0; display:inline-block;">粉丝</span>
