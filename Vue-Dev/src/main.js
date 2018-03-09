@@ -16,8 +16,8 @@ Vue.config.productionTip = false
 axios.defaults.baseURL = store.state.baseHost // 服务器生产环境部署配置 axios ajax 域名
 Vue.prototype.axios = axios
 Vue.use(vueLazyload, {
-  error: store.state.baseHost + 'img/loading.svg',
-  loading: store.state.baseHost + 'img/loading.svg'
+  error: require('./assets/img/loading.svg'),
+  loading: require('./assets/img/loading.svg')
 })
 
 Vue.directive('focus', {
