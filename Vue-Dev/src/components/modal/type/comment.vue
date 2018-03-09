@@ -10,11 +10,16 @@
     <!-- 关闭拟态框组件 -->
     <close-button/>
 
-    <div style="width:100%; height:128px;">
-      <textarea class="cube-bg box-show" style="width:88%; height:100%; resize:none;"></textarea>
+    <div style="width:100%;">
+      <textarea class="cube-bg box-show" style="width:88%; height:93px; resize:none;"></textarea>
+
+      <div style="width:88%; margin:8px auto; text-align:left;">
+        <i class="MyIF happy" style="margin-left:8px; line-height:23px; font-size:20px;"></i>
+        <!--<div style="width:80%; height:42px; background:lightgreen;"></div>-->
+      </div>
     </div>
 
-    <table style="width:88%; margin:15px auto 6px;">
+    <table style="width:88%; margin:8px auto 6px;">
       <tr>
         <td>
           <span class="super-btn-out" @click="closeModal" style="width:80px; height:35px;">
@@ -50,5 +55,5 @@ export default {
 </script>
 
 <style scoped>
-
+  textarea{outline:none;}
 </style>
