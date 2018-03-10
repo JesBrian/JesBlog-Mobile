@@ -1,7 +1,10 @@
 <template>
   <ul>
-    <li class="box-shadow" v-for="n in 10" :key="n" style="width:99%; margin:8px auto;">
+    <li class="box-shadow" v-for="n in 5" :key="n" style="width:99%; margin:8px auto;">
       <article-cell-type-a />
+    </li>
+    <li class="box-shadow" v-for="n in 5" :key="n" style="width:99%; margin:8px auto;">
+      <article-cell-type-b />
     </li>
   </ul>
 </template>

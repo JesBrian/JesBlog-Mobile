@@ -9,10 +9,10 @@
 
       <div style="width:92%; height:42px; margin:8px auto; position:relative;">
         <router-link to="/m/author" style="display:inline-block; float:left;">
-          <img v-lazy="this.$store.state.baseHost + 'img/touxiang.jpg'" style="width:36px; height:36px; margin:3px 12px 0 0; float:left; border-radius:4px;"/>
-          <span style="color:#BBB; font-size:17px;">JesBrian</span>
+          <img v-lazy="this.$store.state.baseHost + 'img/touxiang.jpg'" style="width:32px; height:32px; margin:3px 12px 0 0; float:left; border-radius:4px;"/>
+          <span style="color:#BBB; font-size:16px;">JesBrian</span>
         </router-link>
-        <p style="bottom:0; left:68px; position:absolute; color:#999; font-size:14px;">2018/12/12 12:12</p>
+        <p style="bottom:3px; left:68px; position:absolute; color:#999; font-size:13.5px;">2018/12/12 12:12</p>
 
         <!-- 关注 -->
         <span class="super-btn-out" style="width:68px; height:32px; float:right; border-radius:2px;">

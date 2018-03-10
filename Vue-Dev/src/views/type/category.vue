@@ -5,7 +5,7 @@
         <div class="cube-bg" style="width:62px; height:62px; top:18px; left:20px; position:absolute; display:inline-block;">
           <img class="box-show" v-lazy="this.$store.state.baseHost + 'img/touxiang.jpg'" style="width:88%; height:88%; margin-top:6%;"/>
         </div>
-        <p class="text-hidden" style="width:100%; padding:14px 8px 0 96px; text-align:left; box-sizing:border-box; color:#EEE; font-size:23px; font-weight:600;">分类名称 分类名称 分类名称 分类名称</p>
+        <p class="text-hidden" style="width:100%; padding:23px 8px 0 96px; text-align:left; box-sizing:border-box; color:#EEE; font-size:23px; font-weight:600;">分类名称 分类名称 分类名称 分类名称</p>
         <p style="padding-left:80px; text-align:left; color:#999; font-size:16px;">
           <i class="MyIF hot" style="margin:0 5px 0 21px; font-size:18px; color:#9f8bff;"></i>A
           <i class="MyIF MyIF information" style="margin:0 5px 0 21px; font-size:18px; color:#9f8bff;"></i>888
@@ -18,8 +18,8 @@
           <span class="category-article active" style="width:45%; margin:0; padding:0; display:inline-block;">最新收录</span>
           <span style="width:45%; margin:0; padding:0; display:inline-block;">最受欢迎</span>
         </div>
-        <span class="super-btn-out" style="width:32px; height:32px; top:3px; right:20px; position:absolute;">
-          <span class="super-btn-in MyIF non-collection" style="width:24px; height:24px; top:49%; font-size:24px; line-height:25px;"></span>
+        <span class="super-btn-out" style="width:32px; height:32px; top:3px; right:18px; position:absolute;">
+          <span class="super-btn-in MyIF follow" style="width:24px; height:25px; font-size:24px; line-height:26px; text-align:center;"></span>
         </span>
       </div>
 
