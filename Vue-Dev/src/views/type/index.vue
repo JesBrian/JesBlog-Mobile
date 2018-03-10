@@ -73,6 +73,10 @@
     </router-link>
 
     <div class="glass-bg box-show" style="width:92%; margin:8px auto 0;">
+      <p style="text-align:left; font-size:18px; color:#CCC; border-bottom:1px solid #555; line-height:32px;">
+        <i class="MyIF information" style="margin:0 8px; font-size:20px; color:#9f8bff;"></i>推荐文章
+      </p>
+
       <article-list />
     </div>
   </div>

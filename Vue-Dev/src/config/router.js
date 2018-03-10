@@ -2,15 +2,6 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import iframe from '@/views/iframe.vue'
 import index from '@/views/type/index.vue'
-import categoryList from '@/views/type/categoryList.vue'
-import authorList from '@/views/type/authorList.vue'
-import articleManagement from '@/views/type/articleManagement.vue'
-import author from '@/views/type/author.vue'
-import update from '@/views/type/update.vue'
-import article from '@/views/type/article.vue'
-import category from '@/views/type/category.vue'
-import write from '@/views/type/write.vue'
-import search from '@/views/type/search.vue'
 
 Vue.use(Router)
 
@@ -36,39 +27,43 @@ export default new Router({
         },
         {
           path: 'categoryList',
-          component: categoryList
+          component: () => import('@/views/type/categoryList.vue')
         },
         {
           path: 'authorList',
-          component: authorList
+          component: () => import('@/views/type/authorList.vue')
         },
         {
           path: 'articleManagement',
-          component: articleManagement
+          component: () => import('@/views/type/articleManagement.vue')
         },
         {
           path: 'author',
-          component: author
+          component: () => import('@/views/type/author.vue')
         },
         {
           path: 'update',
-          component: update
+          component: () => import('@/views/type/update.vue')
         },
         {
           path: 'article',
-          component: article
+          component: () => import('@/views/type/article.vue')
         },
         {
           path: 'category',
-          component: category
+          component: () => import('@/views/type/category.vue')
         },
         {
           path: 'write',
-          component: write
+          component: () => import('@/views/type/write.vue')
         },
         {
           path: 'search',
-          component: search
+          component: () => import('@/views/type/search.vue')
+        },
+        {
+          path: 'login',
+          component: () => import('@/views/type/login.vue')
         }
       ]
     },
