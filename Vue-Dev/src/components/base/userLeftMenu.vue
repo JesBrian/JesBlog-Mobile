@@ -2,7 +2,7 @@
   <div :class="{'user-left-menu': this.$store.state.showUserLeftMenu}" style="width:100%; height:100%; top:0; left:-100%; position:fixed; z-index:99; background:rgba(0,0,0,0.6);">
     <div @click="changeUserMenuShow" style="width:100%; height:100%; top:0; left:0; position:absolute; z-index:1;"></div>
 
-    <div class="box-show" style="width:228px; height:100%; box-sizing:border-box; border-radius:0; position:relative; z-index:9; background:#282828;">
+    <div class="user-left-menu-content box-show" :style="slideEffect" @touchstart='touchStart' @touchmove='touchMove' @touchend='touchEnd'>
 
       <!-- 顶部头像 -->
       <div class="glass-bg" style="width:100%; height:88px; box-sizing:border-box; border-radius:0; box-shadow:inset 0 1px 1px -1px rgba(255, 255, 255, 0.2), inset 0 -1px 1px -1px rgba(0, 0, 0, 0.2), 0 12px 12px rgba(0, 0, 0, 0.5), 0 4px 6px rgba(0, 0, 0, 0.3), inset 0 0 0 1.8px #272727;">
@@ -20,35 +20,47 @@
       <!--  -->
       <div class="glass-bg" style="width:100%; height:100%;overflow-y:auto; box-sizing:border-box; position:relative; z-index:-1;">
         <ul style="margin:8px auto 138px;">
-          <li class="box-shadow">
-            <router-link to="/" style="width:100%; height:35px; margin:8px auto 1px; display:inline-block; font-size:21px; font-weight:700; color:#999; letter-spacing:1.5px;">新建文章</router-link>
+          <li class="box-shadow" @click="goto('index')" style="width:100%; height:42px; display:inline-block; font-size:21px; font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
+            主页
           </li>
-          <li class="box-shadow">
-            <router-link to="/" style="width:100%; height:35px; margin:8px auto 1px; display:inline-block; font-size:21px; font-weight:700; color:#999; letter-spacing:1.5px;">新建文章</router-link>
+          <li class="box-shadow" @click="goto('write')" style="width:100%; height:42px; display:inline-block; font-size:21px; font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
+            新建文章
           </li>
-          <li class="box-shadow">
-            <router-link to="/" style="width:100%; height:35px; margin:8px auto 1px; display:inline-block; font-size:21px; font-weight:700; color:#999; letter-spacing:1.5px;">新建文章</router-link>
+          <li class="box-shadow" @click="goto('articleManagement')" style="width:100%; height:42px; display:inline-block; font-size:21px; font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
+            管理文章
           </li>
-          <li class="box-shadow">
-            <router-link to="/" style="width:100%; height:35px; margin:8px auto 1px; display:inline-block; font-size:21px; font-weight:700; color:#999; letter-spacing:1.5px;">新建文章</router-link>
+          <li class="box-shadow" @click="goto('index')" style="width:100%; height:42px; display:inline-block; font-size:21px; font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
+            主页
           </li>
-          <li class="box-shadow">
-            <router-link to="/" style="width:100%; height:35px; margin:8px auto 1px; display:inline-block; font-size:21px; font-weight:700; color:#999; letter-spacing:1.5px;">新建文章</router-link>
+          <li class="box-shadow" @click="goto('write')" style="width:100%; height:42px; display:inline-block; font-size:21px; font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
+            新建文章
           </li>
-          <li class="box-shadow">
-            <router-link to="/" style="width:100%; height:35px; margin:8px auto 1px; display:inline-block; font-size:21px; font-weight:700; color:#999; letter-spacing:1.5px;">新建文章</router-link>
+          <li class="box-shadow" @click="goto('articleManagement')" style="width:100%; height:42px; display:inline-block; font-size:21px; font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
+            管理文章
           </li>
-          <li class="box-shadow">
-            <router-link to="/" style="width:100%; height:35px; margin:8px auto 1px; display:inline-block; font-size:21px; font-weight:700; color:#999; letter-spacing:1.5px;">新建文章</router-link>
+          <li class="box-shadow" @click="goto('index')" style="width:100%; height:42px; display:inline-block; font-size:21px; font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
+            主页
+          </li>
+          <li class="box-shadow" @click="goto('write')" style="width:100%; height:42px; display:inline-block; font-size:21px; font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
+            新建文章
+          </li>
+          <li class="box-shadow" @click="goto('articleManagement')" style="width:100%; height:42px; display:inline-block; font-size:21px; font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
+            管理文章
           </li>
         </ul>
       </div>
 
       <!-- 底部设置 -->
-      <div class="glass-bg" style="width:100%; height:38px; bottom:0; left:0; position:absolute; box-sizing:border-box; border-radius:0; font-size:92%; line-height:38px; box-shadow:inset 0 1px 1px -1px rgba(255, 255, 255, 0.2), inset 0 -1px 1px -1px rgba(0, 0, 0, 0.2), 0 12px 12px rgba(0, 0, 0, 0.5), 0 4px 6px rgba(0, 0, 0, 0.3), inset 0 0 0 1.8px #272727;">
-        <router-link to="/m/update" style="margin:0 6%; color:#CCC;"><i class="MyIF gear" style="margin-right:8px; font-size:98%;"></i>设置</router-link>
-        <a @click="logout" style="margin:0 6%; color:#CCC;"><i class="MyIF exit-2" style="margin-right:8px; font-size:98%;"></i>退出</a>
-      </div>
+      <table class="glass-bg" style="width:100%; height:38px; bottom:0; left:0; position:absolute; box-sizing:border-box; border-radius:0; font-size:20px; font-weight:700; color:#DDD; line-height:38px; box-shadow:inset 0 1px 1px -1px rgba(255, 255, 255, 0.2), inset 0 -1px 1px -1px rgba(0, 0, 0, 0.2), 0 12px 12px rgba(0, 0, 0, 0.5), 0 4px 6px rgba(0, 0, 0, 0.3), inset 0 0 0 1.8px #272727;">
+        <tr>
+          <td @click="goto('update')" style="border-right:2px solid #222;">
+            <i class="MyIF gear" style="margin-right:8px; font-size:98%; font-weight:500; color:#30cdff;"></i>设置
+          </td>
+          <td @click="logout">
+            <i class="MyIF exit-2" style="margin-right:8px; font-size:98%; font-weight:500; color:#30cdff;"></i>退出
+          </td>
+        </tr>
+      </table>
     </div>
   </div>
 </template>
@@ -57,13 +69,52 @@
 export default {
   name: 'user-left-menu',
 
+  data () {
+    return {
+      startX: 0,
+      endX: 0,
+      slideEffect: ''
+    }
+  },
+
   methods: {
     changeUserMenuShow () {
       this.$store.commit('changeUserMenuShow')
     },
 
+    goto (type) {
+      this.$router.push({ path: '/m/' + type })
+      this.$store.commit('changeUserMenuShow')
+    },
+
     logout () {
       this.$store.commit('changeModal', 'warning')
+    },
+
+    touchStart (ev) {
+      ev = ev || event
+      if (ev.touches.length === 1) {
+        this.startX = ev.touches[0].clientX
+      }
+    },
+    touchMove (ev) {
+      ev = ev || event
+      if (ev.touches.length === 1) {
+        let moveX = this.startX - ev.touches[0].clientX
+        if (moveX >= 5) {
+          this.slideEffect = 'left:' + -moveX + 'px'
+        }
+      }
+    },
+    touchEnd (ev) {
+      ev = ev || event
+      if (ev.changedTouches.length === 1) {
+        this.endX = ev.changedTouches[0].clientX
+        if ((this.startX - this.endX) >= 80) {
+          this.$store.commit('changeUserMenuShow')
+        }
+        this.slideEffect = ''
+      }
     }
   }
 }
@@ -72,6 +123,10 @@ export default {
 <style scoped>
   .user-left-menu {
     left:0!important;
+  }
+
+  .user-left-menu-content {
+    width:228px; height:100%; left:0; top:0; box-sizing:border-box; border-radius:0; position:absolute; z-index:9; background:#282828;
   }
 
   li.box-shadow:active {
