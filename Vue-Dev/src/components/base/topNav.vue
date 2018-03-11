@@ -13,9 +13,6 @@
     <div v-else-if="this.$route.path === '/m/write'">
       <p style="line-height:53px; color:#CCC; font-size:28px; letter-spacing:2px; font-weight:700;">编写文章</p>
     </div>
-    <div v-else-if="this.$route.path === '/m/update'">
-      <p style="line-height:53px; color:#CCC; font-size:28px; letter-spacing:2px; font-weight:700;">更新资料</p>
-    </div>
     <div v-else-if="this.$route.path === '/m/author'">
       <p style="line-height:53px; color:#CCC; font-size:28px; letter-spacing:2px; font-weight:700;">作者信息</p>
     </div>
@@ -29,6 +26,12 @@
         <router-link class="MyIF avatar" to="/m/authorList"/>
         <router-link class="MyIF add-data" to="/m/articleManagement"/>
       </div>
+    </div>
+    <div v-else-if="this.$route.path === '/m/update'">
+      <p style="line-height:53px; color:#CCC; font-size:28px; letter-spacing:2px; font-weight:700;">更新资料</p>
+    </div>
+    <div v-else-if="this.$route.path === '/m/login'">
+      <p style="line-height:53px; color:#CCC; font-size:28px; letter-spacing:2px; font-weight:700;">用户登陆</p>
     </div>
 
     <!-- 搜索按钮 & 搜索框 -->

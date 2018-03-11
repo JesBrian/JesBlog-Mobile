@@ -1,8 +1,8 @@
 <template>
-  <div :class="{'user-left-menu': this.$store.state.showUserLeftMenu}" style="width:100%; height:100%; top:0; left:-100%; position:fixed; z-index:99; background:rgba(0,0,0,0.6);">
+  <div class="user-left-menu" :class="{'active': this.$store.state.showUserLeftMenu}">
     <div @click="changeUserMenuShow" style="width:100%; height:100%; top:0; left:0; position:absolute; z-index:1;"></div>
 
-    <div class="user-left-menu-content box-show" :style="slideEffect" @touchstart='touchStart' @touchmove='touchMove' @touchend='touchEnd'>
+    <div class="user-left-menu-content box-show" :class="{'active': this.$store.state.showUserLeftMenu}" :style="slideEffect" @touchstart='touchStart' @touchmove='touchMove' @touchend='touchEnd'>
 
       <!-- 顶部头像 -->
       <div class="glass-bg" style="width:100%; height:88px; box-sizing:border-box; border-radius:0; box-shadow:inset 0 1px 1px -1px rgba(255, 255, 255, 0.2), inset 0 -1px 1px -1px rgba(0, 0, 0, 0.2), 0 12px 12px rgba(0, 0, 0, 0.5), 0 4px 6px rgba(0, 0, 0, 0.3), inset 0 0 0 1.8px #272727;">
@@ -53,7 +53,7 @@
       <!-- 底部设置 -->
       <table class="glass-bg" style="width:100%; height:38px; bottom:0; left:0; position:absolute; box-sizing:border-box; border-radius:0; font-size:20px; font-weight:700; color:#DDD; line-height:38px; box-shadow:inset 0 1px 1px -1px rgba(255, 255, 255, 0.2), inset 0 -1px 1px -1px rgba(0, 0, 0, 0.2), 0 12px 12px rgba(0, 0, 0, 0.5), 0 4px 6px rgba(0, 0, 0, 0.3), inset 0 0 0 1.8px #272727;">
         <tr>
-          <td @click="goto('update')" style="border-right:2px solid #222;">
+          <td @click="goto('update')" style="border-right:2px solid #282828;">
             <i class="MyIF gear" style="margin-right:8px; font-size:98%; font-weight:500; color:#30cdff;"></i>设置
           </td>
           <td @click="logout">
@@ -110,7 +110,7 @@ export default {
       ev = ev || event
       if (ev.changedTouches.length === 1) {
         this.endX = ev.changedTouches[0].clientX
-        if ((this.startX - this.endX) >= 80) {
+        if ((this.startX - this.endX) >= 68) {
           this.$store.commit('changeUserMenuShow')
         }
         this.slideEffect = ''
@@ -122,11 +122,18 @@ export default {
 
 <style scoped>
   .user-left-menu {
-    left:0!important;
+    width:100%; height:100%; top:0; left:-100%; position:fixed; z-index:99; background:rgba(0,0,0,0.6);
+  }
+  .user-left-menu.active {
+    left:0;
   }
 
   .user-left-menu-content {
-    width:228px; height:100%; left:0; top:0; box-sizing:border-box; border-radius:0; position:absolute; z-index:9; background:#282828;
+    width:228px; height:100%; left:-100%; top:0; box-sizing:border-box; border-radius:0; position:absolute; z-index:9; background:#282828;
+  }
+  .user-left-menu-content.active {
+    animation: showLeftMenu 0.38s;
+    left:0;
   }
 
   li.box-shadow:active {
@@ -135,5 +142,11 @@ export default {
 
   li.box-shadow:active a {
     color:#EEE!important;
+  }
+
+  @keyframes showLeftMenu
+  {
+    0%   {left:-100%;}
+    100% {left:0;}
   }
 </style>
