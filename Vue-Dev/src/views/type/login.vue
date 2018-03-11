@@ -26,46 +26,77 @@
       <tr>
         <td colspan="2">
           <!-- 微信 -->
-          <a :href="this.$store.state.baseHost + 'oauth/login?oauthType=Weixin'" @click="checkOAuthLogin" class="super-btn-out" style="width:48px; height:48px; margin:0 18px;">
+          <span @click="checkOAuthLogin('Weixin')" class="super-btn-out" style="width:48px; height:48px; margin:0 18px;">
             <span class="super-btn-in MyIF wechat" style="width:37px; height:37px; line-height:38px; font-size:27px;"></span>
-          </a>
+          </span>
           <!-- QQ -->
-          <a :href="this.$store.state.baseHost + 'oauth/login?oauthType=QQ'" @click="checkOAuthLogin" class="super-btn-out" style="width:48px; height:48px; margin:0 18px;">
+          <span @click="checkOAuthLogin('QQ')" class="super-btn-out" style="width:48px; height:48px; margin:0 18px;">
             <span class="super-btn-in MyIF qq" style="width:37px; height:37px; line-height:38px; font-size:27px;"></span>
-          </a>
+          </span>
           <!-- 微博 -->
-          <a :href="this.$store.state.baseHost + 'oauth/login?oauthType=Weibo'" @click="checkOAuthLogin" class="super-btn-out" style="width:48px; height:48px; margin:0 18px;">
+          <span @click="checkOAuthLogin('Weibo')" class="super-btn-out" style="width:48px; height:48px; margin:0 18px;">
             <span class="super-btn-in MyIF weibo" style="width:37px; height:37px; line-height:38px; font-size:27px;"></span>
-          </a>
+          </span>
         </td>
       </tr>
       <tr>
         <td colspan="2" style="padding-top:12px;">
           <!-- 百度 -->
-          <a :href="this.$store.state.baseHost + 'oauth/login?oauthType=Baidu'" @click="checkOAuthLogin" class="super-btn-out" style="width:48px; height:48px; margin:0 18px;">
+          <span @click="checkOAuthLogin('Baidu')" class="super-btn-out" style="width:48px; height:48px; margin:0 18px;">
             <span class="super-btn-in MyIF github" style="width:37px; height:37px; line-height:38px; font-size:27px;"></span>
-          </a>
+          </span>
           <!-- Gitee -->
-          <a :href="this.$store.state.baseHost + 'oauth/login?oauthType=Gitee'" @click="checkOAuthLogin" class="super-btn-out" style="width:48px; height:48px; margin:0 18px;">
+          <span @click="checkOAuthLogin('Gitee')" class="super-btn-out" style="width:48px; height:48px; margin:0 18px;">
             <span class="super-btn-in MyIF weibo" style="width:37px; height:37px; line-height:38px; font-size:27px;"></span>
-          </a>
+          </span>
           <!-- Github -->
-          <a :href="this.$store.state.baseHost + 'oauth/login?oauthType=Github'" @click="checkOAuthLogin" class="super-btn-out" style="width:48px; height:48px; margin:0 18px;">
+          <span @click="checkOAuthLogin('Github')" class="super-btn-out" style="width:48px; height:48px; margin:0 18px;">
             <span class="super-btn-in MyIF github" style="width:37px; height:37px; line-height:38px; font-size:27px;"></span>
-          </a>
+          </span>
         </td>
       </tr>
 
       <tr>
-        <td colspan="2" style="padding:38px 8% 18px; text-align:left;">其他操作：</td>
+        <td colspan="2" style="padding:38px 8% 18px; text-align:left;">其他操作：
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <span @click="loginTest">Test跳转</span>
+        </td>
+        <td>
+          <span @click="loginTest">Test跳转</span>
+        </td>
       </tr>
     </table>
+
+    <div v-show="showLogin" style="width:100%; height:100%; top:0; left:0; padding:108px 0 0; position:fixed; box-sizing:border-box; z-index:10; background:#FFF;">
+      <iframe id="loginFrame" name="loginFrame" style="width:100%; height:100%; border:none;"></iframe>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'login'
+  name: 'login',
+
+  data () {
+    return {
+      showLogin: false
+    }
+  },
+
+  methods: {
+    loginTest () {
+      this.showLogin = true
+    },
+
+    checkOAuthLogin (type) {
+      this.showLogin = true
+      document.getElementById('loginFrame').src = this.$store.state.baseHost + 'oauth/login?oauthType=' + type
+    }
+  }
 }
 </script>
 
