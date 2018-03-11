@@ -12,9 +12,6 @@
     },
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "io.cordova.JesBlog"
-    },
-    "cordova-plugin-inappbrowser": {
-      "PACKAGE_NAME": "io.cordova.JesBlog"
     }
   },
   "dependent_plugins": {}
