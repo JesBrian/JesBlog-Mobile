@@ -2,7 +2,7 @@
   <div>
     <table id="loginTable" class="glass-bg box-show" style="width:95%; margin:0 auto; padding:18px 0; color:#DDD;">
       <tr>
-        <td colspan="2" style="padding:8px 8% 18px; text-align:left;">账户登录：</td>
+        <td colspan="2" style="padding:0 8% 18px; text-align:left; font-size:23px; font-weight:700;"><i class="MyIF user" style="margin-right:8px; font-size:25px;"></i>账户登录：</td>
       </tr>
       <tr>
         <td style="width:68px; padding-bottom:20px; text-align:right;">邮箱</td>
@@ -13,15 +13,15 @@
         <td style="padding-bottom:18px"><label><input type="password" class="cube-bg box-show" style="width:80%; margin:0 auto; padding:5px 8px; font-size:20px; color:#DDD;"/></label></td>
       </tr>
       <tr>
-        <td colspan="2" style="padding-top:18px;">
-          <span class="super-btn-out" style="width:238px; height:52px; margin:0 12px;">
+        <td colspan="2">
+          <span class="super-btn-out" style="width:238px; height:52px; margin:8px 0 32px;">
             <span class="super-btn-in MyIF makesure" style="width:226px; height:38px; top:48%; line-height:39px; font-size:25px;"> 确 认 登 录</span>
           </span>
         </td>
       </tr>
 
       <tr>
-        <td colspan="2" style="padding:38px 8% 18px; text-align:left;">第三方登陆：</td>
+        <td colspan="2" style="padding:0 8% 18px; text-align:left; font-size:23px; font-weight:700;"><i class="MyIF user" style="margin-right:8px; font-size:25px;"></i>第三方登陆：</td>
       </tr>
       <tr>
         <td colspan="2">
@@ -57,23 +57,17 @@
       </tr>
 
       <tr>
-        <td colspan="2" style="padding:38px 8% 18px; text-align:left;">其他操作：
-        </td>
+        <td colspan="2" style="padding:32px 8% 18px; text-align:left; font-size:23px; font-weight:700;"><i class="MyIF user" style="margin-right:8px; font-size:25px;"></i>其他操作：</td>
       </tr>
-
       <tr>
         <td>
-          <span @click="loginTest">Test跳转</span>
+
         </td>
         <td>
-          <span @click="loginTest">Test跳转</span>
+
         </td>
       </tr>
     </table>
-
-    <div v-show="showLogin" style="width:100%; height:100%; top:0; left:0; padding:108px 0 0; position:fixed; box-sizing:border-box; z-index:10; background:#FFF;">
-      <iframe id="loginFrame" name="loginFrame" style="width:100%; height:100%; border:none;"></iframe>
-    </div>
   </div>
 </template>
 
@@ -83,18 +77,13 @@ export default {
 
   data () {
     return {
-      showLogin: false
     }
   },
 
   methods: {
-    loginTest () {
-      this.showLogin = true
-    },
-
     checkOAuthLogin (type) {
-      this.showLogin = true
-      document.getElementById('loginFrame').src = this.$store.state.baseHost + 'oauth/login?oauthType=' + type
+      this.$store.commit('changeOAuthType', type)
+      this.$store.commit('changeModal', 'oauthLogin')
     }
   }
 }

@@ -7,6 +7,7 @@ export default new Vuex.Store({
   state: {
     // baseHost: 'http://jesbrian.cn/JesBlog-Backstage/web/',
     baseHost: 'http://blog.jesbrian.cn/', // 服务器生产环境部署配置域名
+    oauthType: '',
     modalType: '',
     tips: '',
     showUserLeftMenu: false,
@@ -19,6 +20,13 @@ export default new Vuex.Store({
      */
     changeModal (state, type = '') {
       state.modalType = type
+    },
+
+    /**
+     * 弹出各种拟态框 OR 关闭拟态框
+     */
+    changeOAuthType (state, type = '') {
+      state.oauthType = type
     },
 
     /**
