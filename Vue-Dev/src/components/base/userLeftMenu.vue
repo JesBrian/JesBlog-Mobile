@@ -146,7 +146,7 @@ export default {
 
   @keyframes showLeftMenu
   {
-    0%   {left:-100%;}
+    0%   {left:-80%;}
     100% {left:0;}
   }
 </style>

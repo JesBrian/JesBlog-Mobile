@@ -10,15 +10,21 @@
     <!-- 关闭拟态框组件 -->
     <close-button/>
 
-    <div style="width:100%; height:338px; padding:0 18px 23px; box-sizing:border-box;">
+    <div style="width:100%; height:338px; padding:0 8px 12px; box-sizing:border-box;">
       <iframe :src="this.$store.state.baseHost + 'oauth/login?oauthType=' + this.$store.state.oauthType" class="box-show" style="width:100%; height:100%; border:none;"></iframe>
     </div>
   </div>
 </template>
 
 <script>
+import closeButton from '../closeButton.vue'
+
 export default {
-  name: 'oauth-login'
+  name: 'oauth-login',
+
+  components: {
+    closeButton
+  }
 }
 </script>
 
