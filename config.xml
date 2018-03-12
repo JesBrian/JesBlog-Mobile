@@ -24,6 +24,5 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen.git" />
-    <plugin name="cordova-plugin-inappbrowser" spec="^2.0.2" />
     <engine name="android" spec="^7.0.0" />
 </widget>

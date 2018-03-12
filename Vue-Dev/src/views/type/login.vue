@@ -27,15 +27,15 @@
         <td colspan="2">
           <!-- 微信 -->
           <span @click="checkOAuthLogin('Weixin')" class="super-btn-out" style="width:48px; height:48px; margin:0 18px;">
-            <span class="super-btn-in MyIF wechat" style="width:37px; height:37px; line-height:38px; font-size:27px;"></span>
+            <span class="super-btn-in MyIF wechat" style="width:37px; height:37px; line-height:39px; font-size:27px;"></span>
           </span>
           <!-- QQ -->
           <span @click="checkOAuthLogin('QQ')" class="super-btn-out" style="width:48px; height:48px; margin:0 18px;">
-            <span class="super-btn-in MyIF qq" style="width:37px; height:37px; line-height:38px; font-size:27px;"></span>
+            <span class="super-btn-in MyIF qq" style="width:37px; height:37px; line-height:39px; font-size:27px;"></span>
           </span>
           <!-- 微博 -->
           <span @click="checkOAuthLogin('Weibo')" class="super-btn-out" style="width:48px; height:48px; margin:0 18px;">
-            <span class="super-btn-in MyIF weibo" style="width:37px; height:37px; line-height:38px; font-size:27px;"></span>
+            <span class="super-btn-in MyIF weibo" style="width:37px; height:37px; line-height:39px; font-size:27px;"></span>
           </span>
         </td>
       </tr>
@@ -43,15 +43,15 @@
         <td colspan="2" style="padding-top:12px;">
           <!-- 百度 -->
           <span @click="checkOAuthLogin('Baidu')" class="super-btn-out" style="width:48px; height:48px; margin:0 18px;">
-            <span class="super-btn-in MyIF github" style="width:37px; height:37px; line-height:38px; font-size:27px;"></span>
+            <span class="super-btn-in MyIF github" style="width:37px; height:37px; line-height:39px; font-size:27px;"></span>
           </span>
           <!-- Gitee -->
           <span @click="checkOAuthLogin('Gitee')" class="super-btn-out" style="width:48px; height:48px; margin:0 18px;">
-            <span class="super-btn-in MyIF weibo" style="width:37px; height:37px; line-height:38px; font-size:27px;"></span>
+            <span class="super-btn-in MyIF weibo" style="width:37px; height:37px; line-height:39px; font-size:27px;"></span>
           </span>
           <!-- Github -->
           <span @click="checkOAuthLogin('Github')" class="super-btn-out" style="width:48px; height:48px; margin:0 18px;">
-            <span class="super-btn-in MyIF github" style="width:37px; height:37px; line-height:38px; font-size:27px;"></span>
+            <span class="super-btn-in MyIF github" style="width:37px; height:37px; line-height:39px; font-size:27px;"></span>
           </span>
         </td>
       </tr>
