@@ -15,10 +15,10 @@
 
       <div style="margin-top:16px; position:relative">
         <div style="width:100%; height:38px; padding:0 62px 0 20px; box-sizing:border-box; line-height:38px; font-size:17px; font-weight:700; letter-spacing:1px; color:#AAA;">
-          <span style="width:23%; margin:0; padding:0; display:inline-block;">简介</span>
-          <span class="category-article active" style="width:23%; margin:0; padding:0; display:inline-block;">文章</span>
-          <span style="width:23%; margin:0; padding:0; display:inline-block;">粉丝</span>
-          <span style="width:23%; margin:0; padding:0; display:inline-block;">评论</span>
+          <span class="author-content" :class="{active: contentType === 'summary'}" @click="changeContent('summary')">简介</span>
+          <span class="author-content" :class="{active: contentType === 'article'}" @click="changeContent('article')">文章</span>
+          <span class="author-content" :class="{active: contentType === 'fans'}" @click="changeContent('fans')">粉丝</span>
+          <span class="author-content" :class="{active: contentType === 'comment'}" @click="changeContent('comment')">评论</span>
         </div>
 
         <span class="super-btn-out" style="width:32px; height:32px; top:3px; right:18px; position:absolute;">
@@ -36,18 +36,33 @@
 
 <script>
 export default {
-  name: 'index'
+  name: 'index',
+
+  data () {
+    return {
+      contentType: 'summary'
+    }
+  },
+
+  methods: {
+    changeContent (type = 'summary') {
+      if (this.contentType === type) {
+        return false
+      }
+      this.contentType = type
+    }
+  }
 }
 </script>
 
 <style scoped>
-  .category-article {
-    position: relative;
+  .author-content {
+    width:23%; margin:0; padding:0; position:relative; display:inline-block;
   }
-  .category-article.active {
+  .author-content.active {
     color:#DDD;
   }
-  .category-article.active:after {
+  .author-content.active:after {
     content:'';
     width:100%;
     height:3px;

@@ -15,8 +15,8 @@
 
       <div style="margin:16px 0 18px; position:relative">
         <div style="width:100%; height:38px; padding:0 88px 0 23px; box-sizing:border-box; line-height:38px; font-size:17px; font-weight:700; letter-spacing:1px; color:#AAA;">
-          <span class="category-article active" style="width:45%; margin:0; padding:0; display:inline-block;">最新收录</span>
-          <span style="width:45%; margin:0; padding:0; display:inline-block;">最受欢迎</span>
+          <span class="category-article" :class="{active: contentType === 'new'}" @click="changeContent('new')">最新收录</span>
+          <span class="category-article" :class="{active: contentType === 'hot'}" @click="changeContent('hot')">最受欢迎</span>
         </div>
         <span class="super-btn-out" style="width:32px; height:32px; top:3px; right:18px; position:absolute;">
           <span class="super-btn-in MyIF follow" style="width:24px; height:25px; font-size:24px; line-height:26px; text-align:center;"></span>
@@ -37,13 +37,28 @@ export default {
 
   components: {
     articleList
+  },
+
+  data () {
+    return {
+      contentType: 'new'
+    }
+  },
+
+  methods: {
+    changeContent (type = 'new') {
+      if (this.contentType === type) {
+        return false
+      }
+      this.contentType = type
+    }
   }
 }
 </script>
 
 <style scoped>
   .category-article {
-    position: relative;
+    width:45%; margin:0; padding:0; position:relative; display:inline-block;
   }
   .category-article.active {
     color:#DDD;
