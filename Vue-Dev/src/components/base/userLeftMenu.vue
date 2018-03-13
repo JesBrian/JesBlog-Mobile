@@ -132,7 +132,7 @@ export default {
     width:228px; height:100%; left:-100%; top:0; box-sizing:border-box; border-radius:0; position:absolute; z-index:9; background:#282828;
   }
   .user-left-menu-content.active {
-    animation: showLeftMenu 0.38s;
+    animation: showLeftMenu 0.28s;
     left:0;
   }
 
@@ -146,7 +146,7 @@ export default {
 
   @keyframes showLeftMenu
   {
-    0%   {left:-80%;}
+    0%   {left:-68%;}
     100% {left:0;}
   }
 </style>

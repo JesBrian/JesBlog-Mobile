@@ -15,10 +15,10 @@
 
       <div style="margin-top:16px; position:relative">
         <div style="width:100%; height:38px; padding:0 62px 0 20px; box-sizing:border-box; line-height:38px; font-size:17px; font-weight:700; letter-spacing:1px; color:#AAA;">
-          <span class="author-content" :class="{active: contentType === 'summary'}" @click="changeContent('summary')">简介</span>
-          <span class="author-content" :class="{active: contentType === 'article'}" @click="changeContent('article')">文章</span>
-          <span class="author-content" :class="{active: contentType === 'fans'}" @click="changeContent('fans')">粉丝</span>
-          <span class="author-content" :class="{active: contentType === 'comment'}" @click="changeContent('comment')">评论</span>
+          <span class="author-content" :class="{active: contentType === 'auSummary'}" @click="changeContent('auSummary')">简介</span>
+          <span class="author-content" :class="{active: contentType === 'auArticle'}" @click="changeContent('auArticle')">文章</span>
+          <span class="author-content" :class="{active: contentType === 'auFans'}" @click="changeContent('auFans')">粉丝</span>
+          <span class="author-content" :class="{active: contentType === 'auComment'}" @click="changeContent('auComment')">评论</span>
         </div>
 
         <span class="super-btn-out" style="width:32px; height:32px; top:3px; right:18px; position:absolute;">
@@ -27,7 +27,7 @@
       </div>
 
       <div style="width:100%; margin-top:18px;">
-        <div class="box-show" style="width:92%; min-height:666px; margin:0 auto 18px;"></div>
+        <component :is="contentType" />
       </div>
 
     </div>
@@ -35,17 +35,27 @@
 </template>
 
 <script>
+import auSummary from '@/components/article/articleDetail.vue'
+import auArticle from '@/components/article/articleList.vue'
+import auFans from '@/components/author/authorList.vue'
+
 export default {
-  name: 'index',
+  name: 'author',
+
+  components: {
+    auSummary,
+    auArticle,
+    auFans
+  },
 
   data () {
     return {
-      contentType: 'summary'
+      contentType: 'auSummary'
     }
   },
 
   methods: {
-    changeContent (type = 'summary') {
+    changeContent (type = 'auSummary') {
       if (this.contentType === type) {
         return false
       }
