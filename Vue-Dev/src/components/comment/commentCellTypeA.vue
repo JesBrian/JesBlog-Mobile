@@ -18,7 +18,13 @@
 
 <script>
 export default {
-  name: 'comment-cell-type-a'
+  name: 'comment-cell-type-a',
+
+  methods: {
+    createComment () {
+      this.$store.commit('changeModal', 'comment')
+    }
+  }
 }
 </script>
 

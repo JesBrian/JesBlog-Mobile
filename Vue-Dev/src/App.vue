@@ -170,6 +170,21 @@ export default {
     text-overflow:ellipsis;
   }
 
+  textarea:focus, input[type='text']:focus {
+    border-color:#2af1fc!important;
+    animation: glow 666ms ease-out infinite alternate;
+  }
+  @keyframes glow {
+    0% {
+      border-color: #22E8FF;
+      box-shadow: 0 0 5px rgba(87, 228, 255, 0.2), inset 0 0 5px rgba(46, 231, 255, 0.1), 0 2px 0 #000;
+    }
+    100% {
+      border-color: #30CDFF;
+      box-shadow: 0 0 20px rgba(46, 231, 255, 0.6), inset 0 0 10px rgba(46, 231, 255, 0.4), 0 2px 0 #000;
+    }
+  }
+
   #app {
     width: 100%;
     height: 100%;

@@ -38,6 +38,7 @@
 import auSummary from '@/components/article/articleDetail.vue'
 import auArticle from '@/components/article/articleList.vue'
 import auFans from '@/components/author/authorList.vue'
+import auComment from '@/components/comment/commentList.vue'
 
 export default {
   name: 'author',
@@ -45,7 +46,8 @@ export default {
   components: {
     auSummary,
     auArticle,
-    auFans
+    auFans,
+    auComment
   },
 
   data () {

@@ -62,9 +62,6 @@ export default {
   },
 
   methods: {
-    createComment () {
-      this.$store.commit('changeModal', 'comment')
-    }
   }
 }
 </script>
