@@ -2,7 +2,7 @@
   <div>
     <table id="loginTable" class="glass-bg box-show" style="width:95%; margin:0 auto; padding:18px 0; color:#DDD;">
       <tr>
-        <td colspan="2" style="padding:0 8% 18px; text-align:left; font-size:23px; font-weight:700;"><i class="MyIF menu-user" style="margin-right:8px; font-size:25px; color:#4cb1e5;"></i>账户登录：</td>
+        <td colspan="2" style="padding:0 8% 18px; text-align:left; font-size:23px; font-weight:700;"><i class="MyIF menu-bigdata" style="margin-right:12px; font-size:25px; color:#4cb1e5;"></i>账户登录：</td>
       </tr>
       <tr>
         <td style="width:68px; padding-bottom:20px; text-align:right;">邮箱</td>
@@ -21,7 +21,7 @@
       </tr>
 
       <tr>
-        <td colspan="2" style="padding:0 8% 18px; text-align:left; font-size:23px; font-weight:700;"><i class="MyIF menu-terminal" style="margin-right:8px; font-size:25px; color:#4cb1e5;"></i>第三方登陆：</td>
+        <td colspan="2" style="padding:0 8% 18px; text-align:left; font-size:23px; font-weight:700;"><i class="MyIF menu-terminal" style="margin-right:12px; font-size:25px; color:#4cb1e5;"></i>第三方登陆：</td>
       </tr>
       <tr>
         <td colspan="2">
@@ -57,7 +57,7 @@
       </tr>
 
       <tr>
-        <td colspan="2" style="padding:32px 8% 18px; text-align:left; font-size:23px; font-weight:700;"><i class="MyIF menu-tool" style="margin-right:8px; font-size:25px; color:#4cb1e5;"></i>其他操作：</td>
+        <td colspan="2" style="padding:32px 8% 18px; text-align:left; font-size:23px; font-weight:700;"><i class="MyIF menu-tool" style="margin-right:12px; font-size:25px; color:#4cb1e5;"></i>其他操作：</td>
       </tr>
       <tr>
         <td>
