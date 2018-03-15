@@ -16,7 +16,20 @@ export default new Vuex.Store({
   mutations: {
 
     /**
+     * 重置 Vuex 变量
+     * @param state
+     */
+    resetVuexStore (state) {
+      state.modalType = ''
+      state.oauthType = ''
+      state.tips = ''
+      state.showUserLeftMenu = false
+    },
+
+    /**
      * 弹出各种拟态框 OR 关闭拟态框
+     * @param state
+     * @param type
      */
     changeModal (state, type = '') {
       state.modalType = type
