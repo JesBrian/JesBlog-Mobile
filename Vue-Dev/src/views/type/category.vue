@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div @touchstart='touchStart' @touchend='touchEnd'>
     <div class="glass-bg box-show" style="width:92%; margin:0 auto; position:relative; box-sizing:border-box;">
       <div>
         <div class="cube-bg" style="width:62px; height:62px; top:18px; left:20px; position:absolute; display:inline-block;">
@@ -51,6 +51,36 @@ export default {
         return false
       }
       this.contentType = type
+    },
+
+    touchStart (ev) {
+      ev = ev || event
+      if (ev.touches.length === 1) {
+        this.startX = ev.touches[0].clientX
+      }
+    },
+    touchEnd (ev) {
+      ev = ev || event
+      if (ev.changedTouches.length === 1) {
+        this.endX = ev.changedTouches[0].clientX
+        if ((this.startX <= 38) && ((this.endX - this.startX) >= 68)) {
+          this.$store.commit('changeUserMenuShow')
+        } else if ((this.startX >= 38) && ((this.endX - this.startX) >= 68)) {
+          let type = 'new'
+          if (this.contentType === 'new') {
+            type = 'hot'
+          }
+          this.changeContent(type)
+        } else if ((document.body.clientWidth - this.startX >= 38) && ((this.startX - this.endX) >= 68)) {
+          let type = 'new'
+          if (this.contentType === 'new') {
+            type = 'hot'
+          }
+          this.changeContent(type)
+        } else if ((document.body.clientWidth - this.startX <= 38) && ((this.startX - this.endX) >= 68)) {
+          this.$router.push({ path: '/m/search' })
+        }
+      }
     }
   }
 }
