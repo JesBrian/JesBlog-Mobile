@@ -60,11 +60,17 @@
         <td colspan="2" style="padding:32px 8% 18px; text-align:left; font-size:23px; font-weight:700;"><i class="MyIF menu-tool" style="margin-right:12px; font-size:25px; color:#4cb1e5;"></i>其他操作：</td>
       </tr>
       <tr>
-        <td>
-
+        <td colspan="2" >
+          <span class="super-btn-out" style="width:238px; height:52px; margin:8px 0;">
+            <span class="super-btn-in MyIF makesure" style="width:226px; height:38px; top:48%; line-height:39px; font-size:25px;"> 忘 记 密 码</span>
+          </span>
         </td>
-        <td>
-
+      </tr>
+      <tr>
+        <td colspan="2" >
+          <router-link class="super-btn-out" to="/" style="width:238px; height:52px; margin:8px 0;">
+            <span class="super-btn-in MyIF makesure" style="width:226px; height:38px; top:48%; line-height:39px; font-size:25px;"> 随 便 看 看</span>
+          </router-link>
         </td>
       </tr>
     </table>

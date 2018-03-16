@@ -18,32 +18,32 @@
       </div>
 
       <!--  -->
-      <div class="glass-bg" style="width:100%; height:100%; padding:8px 8px 138px; overflow-y:auto; box-sizing:border-box; position:relative; z-index:-1;">
-        <router-link to="/m/index" class="box-shadow" style="width:100%; height:42px; display:inline-block; font-size:21px; font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
+      <div class="glass-bg" style="width:100%; height:100%; padding:8px 18px 138px; overflow-y:auto; box-sizing:border-box; position:relative; z-index:-1; font-size:20px;">
+        <router-link to="/m/index" class="box-shadow" style="width:100%; height:42px; display:inline-block; font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
           主页
         </router-link>
-        <router-link to="/m/write" class="box-shadow" @click="goto('write')" style="width:100%; height:42px; display:inline-block; font-size:21px; font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
+        <router-link to="/m/write" class="box-shadow" @click="goto('write')" style="width:100%; height:42px; display:inline-block;  font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
           新建文章
         </router-link>
-        <router-link to="/m/articleManagement" class="box-shadow" @click="goto('articleManagement')" style="width:100%; height:42px; display:inline-block; font-size:21px; font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
+        <router-link to="/m/articleManagement" class="box-shadow" @click="goto('articleManagement')" style="width:100%; height:42px; display:inline-block;  font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
           管理文章
         </router-link>
-        <router-link to="/m/index" class="box-shadow" style="width:100%; height:42px; display:inline-block; font-size:21px; font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
+        <router-link to="/m/index" class="box-shadow" style="width:100%; height:42px; display:inline-block;  font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
           主页
         </router-link>
-        <router-link to="/m/write" class="box-shadow" @click="goto('write')" style="width:100%; height:42px; display:inline-block; font-size:21px; font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
+        <router-link to="/m/write" class="box-shadow" @click="goto('write')" style="width:100%; height:42px; display:inline-block;  font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
           新建文章
         </router-link>
-        <router-link to="/m/articleManagement" class="box-shadow" @click="goto('articleManagement')" style="width:100%; height:42px; display:inline-block; font-size:21px; font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
+        <router-link to="/m/articleManagement" class="box-shadow" @click="goto('articleManagement')" style="width:100%; height:42px; display:inline-block;  font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
           管理文章
         </router-link>
-        <router-link to="/m/index" class="box-shadow" style="width:100%; height:42px; display:inline-block; font-size:21px; font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
+        <router-link to="/m/index" class="box-shadow" style="width:100%; height:42px; display:inline-block;  font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
           主页
         </router-link>
-        <router-link to="/m/write" class="box-shadow" @click="goto('write')" style="width:100%; height:42px; display:inline-block; font-size:21px; font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
+        <router-link to="/m/write" class="box-shadow" @click="goto('write')" style="width:100%; height:42px; display:inline-block;  font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
           新建文章
         </router-link>
-        <router-link to="/m/articleManagement" class="box-shadow" @click="goto('articleManagement')" style="width:100%; height:42px; display:inline-block; font-size:21px; font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
+        <router-link to="/m/articleManagement" class="box-shadow" @click="goto('articleManagement')" style="width:100%; height:42px; display:inline-block;  font-weight:700; line-height:44px; color:#999; letter-spacing:1.5px;">
           管理文章
         </router-link>
       </div>

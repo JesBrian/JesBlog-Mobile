@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div @touchstart='touchStart' @touchend='touchEnd'>
     <div>
       <div class="glass-bg box-show" style="width:92%; margin:0 auto;">
 
@@ -20,6 +20,31 @@ export default {
 
   components: {
     authorListComponent
+  },
+
+  methods: {
+
+    touchStart (ev) {
+      ev = ev || event
+      if (ev.touches.length === 1) {
+        this.startX = ev.touches[0].clientX
+      }
+    },
+    touchEnd (ev) {
+      ev = ev || event
+      if (ev.changedTouches.length === 1) {
+        this.endX = ev.changedTouches[0].clientX
+        if ((this.startX <= 48) && ((this.endX - this.startX) >= 68)) {
+          this.$store.commit('changeUserMenuShow')
+        } else if ((this.startX >= 38) && ((this.endX - this.startX) >= 68)) {
+          this.$router.push({ path: '/m/categoryList' })
+        } else if ((document.body.clientWidth - this.startX <= 38) && ((this.startX - this.endX) >= 68)) {
+          this.$router.push({ path: '/m/search' })
+        } else if ((this.startX >= 38) && (document.body.clientWidth - this.startX >= 38) && ((this.startX - this.endX) >= 68)) {
+          this.$router.push({ path: '/m/articleManagement' })
+        }
+      }
+    }
   }
 }
 </script>
