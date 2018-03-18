@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div @touchstart='touchStart' @touchend='touchEnd'>
     <table class="glass-bg box-show" style="width:95%; margin:0 auto; padding:18px 0; color:#DDD;">
       <tr>
         <td style="height:80px; position:relative;">
@@ -52,7 +52,28 @@
 
 <script>
 export default {
-  name: 'update'
+  name: 'update',
+
+  methods: {
+
+    touchStart (ev) {
+      ev = ev || event
+      if (ev.touches.length === 1) {
+        this.startX = ev.touches[0].clientX
+      }
+    },
+    touchEnd (ev) {
+      ev = ev || event
+      if (ev.changedTouches.length === 1) {
+        this.endX = ev.changedTouches[0].clientX
+        if ((this.startX <= 38) && ((this.endX - this.startX) >= 68)) {
+          this.$store.commit('changeUserMenuShow')
+        } else if ((document.body.clientWidth - this.startX <= 38) && ((this.startX - this.endX) >= 68)) {
+          this.$router.push({ path: '/m/search' })
+        }
+      }
+    }
+  }
 }
 </script>
 

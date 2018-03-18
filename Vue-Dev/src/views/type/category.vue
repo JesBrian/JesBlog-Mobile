@@ -65,13 +65,13 @@ export default {
         this.endX = ev.changedTouches[0].clientX
         if ((this.startX <= 38) && ((this.endX - this.startX) >= 68)) {
           this.$store.commit('changeUserMenuShow')
-        } else if ((this.startX >= 38) && ((this.endX - this.startX) >= 68)) {
+        } else if ((this.startX >= 38) && ((this.endX - this.startX) >= 138)) {
           let type = 'new'
           if (this.contentType === 'new') {
             type = 'hot'
           }
           this.changeContent(type)
-        } else if ((document.body.clientWidth - this.startX >= 38) && ((this.startX - this.endX) >= 68)) {
+        } else if ((document.body.clientWidth - this.startX >= 38) && ((this.startX - this.endX) >= 138)) {
           let type = 'new'
           if (this.contentType === 'new') {
             type = 'hot'

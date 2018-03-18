@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div @touchstart='touchStart' @touchend='touchEnd'>
     <div class="glass-bg box-show" style="width:92%; margin:0 auto; padding:8px 0; box-sizing:border-box;">
 
       <span class="super-btn-out" style="width:32px; height:32px; margin:0 8px 3px 6px; float:right;">
@@ -62,6 +62,25 @@ export default {
   },
 
   methods: {
+    touchStart (ev) {
+      ev = ev || event
+      if (ev.touches.length === 1) {
+        this.startX = ev.touches[0].clientX
+      }
+    },
+    touchEnd (ev) {
+      ev = ev || event
+      if (ev.changedTouches.length === 1) {
+        this.endX = ev.changedTouches[0].clientX
+        if ((this.startX <= 38) && ((this.endX - this.startX) >= 68)) {
+          this.$store.commit('changeUserMenuShow')
+        } else if ((this.startX >= 38) && ((this.endX - this.startX) >= 138)) {
+          this.$router.back(-1)
+        } else if ((document.body.clientWidth - this.startX <= 38) && ((this.startX - this.endX) >= 68)) {
+          this.$router.push({ path: '/m/search' })
+        }
+      }
+    }
   }
 }
 </script>

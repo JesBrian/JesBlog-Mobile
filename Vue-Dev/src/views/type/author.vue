@@ -76,7 +76,7 @@ export default {
         this.endX = ev.changedTouches[0].clientX
         if ((this.startX <= 38) && ((this.endX - this.startX) >= 68)) {
           this.$store.commit('changeUserMenuShow')
-        } else if ((this.startX >= 38) && ((this.endX - this.startX) >= 68)) {
+        } else if ((this.startX >= 38) && ((this.endX - this.startX) >= 138)) {
           let type = 'auSummary'
           if (this.contentType === 'auSummary') {
             type = 'auComment'
@@ -86,7 +86,7 @@ export default {
             type = 'auArticle'
           }
           this.changeContent(type)
-        } else if ((document.body.clientWidth - this.startX >= 38) && ((this.startX - this.endX) >= 68)) {
+        } else if ((document.body.clientWidth - this.startX >= 38) && ((this.startX - this.endX) >= 138)) {
           let type = 'auSummary'
           if (this.contentType === 'auSummary') {
             type = 'auArticle'

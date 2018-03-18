@@ -111,9 +111,9 @@ export default {
       ev = ev || event
       if (ev.changedTouches.length === 1) {
         this.endX = ev.changedTouches[0].clientX
-        if ((this.startX <= 48) && ((this.endX - this.startX) >= 68)) {
+        if ((this.startX <= 38) && ((this.endX - this.startX) >= 68)) {
           this.$store.commit('changeUserMenuShow')
-        } else if ((this.startX >= 38) && ((this.endX - this.startX) >= 68)) {
+        } else if ((this.startX >= 38) && ((this.endX - this.startX) >= 138)) {
           this.$router.back(-1)
         }
       }
