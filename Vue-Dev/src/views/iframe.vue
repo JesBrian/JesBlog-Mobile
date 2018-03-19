@@ -14,7 +14,7 @@
     <bottom-nav/>
 
     <!-- 二级路由 -->
-    <div style="width:100%; height:100%; top:0; left:0; position:absolute; overflow-x:hidden;">
+    <div style="width:100%; top:0; left:0; position:absolute; overflow-x:hidden; background:#2E2E2E;">
       <transition :name="this.$store.state.transitionName" >
         <router-view style="padding:72px 0 56px; position:relative; transition: all .5s cubic-bezier(.55,0,.1,1);"/>
       </transition>
