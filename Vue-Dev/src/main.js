@@ -31,7 +31,7 @@ Vue.directive('focus', {
 // 每次路由跳转执行操作 - 重置 vuex 变量
 router.beforeEach((to, from, next) => {
   next()
-  setTimeout( () => {
+  setTimeout(() => {
     store.commit('resetVuexStore')
   }, 88)
 })
