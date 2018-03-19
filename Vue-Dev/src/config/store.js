@@ -7,6 +7,7 @@ export default new Vuex.Store({
   state: {
     // baseHost: 'http://jesbrian.cn/JesBlog-Backstage/web/',
     baseHost: 'http://blog.jesbrian.cn/', // 服务器生产环境部署配置域名
+    transitionName: 'slide-left',
     oauthType: '',
     modalType: '',
     tips: '',
@@ -20,10 +21,20 @@ export default new Vuex.Store({
      * @param state
      */
     resetVuexStore (state) {
+      state.transitionName = 'slide-left'
       state.modalType = ''
       state.oauthType = ''
       state.tips = ''
       state.showUserLeftMenu = false
+    },
+
+    /**
+     * 切换路由滑动效果
+     * @param state
+     * @param type
+     */
+    changeRouterTransition (state, type = 'slide-left') {
+      state.transitionName = type
     },
 
     /**
@@ -37,6 +48,8 @@ export default new Vuex.Store({
 
     /**
      * 弹出各种拟态框 OR 关闭拟态框
+     * @param state
+     * @param type
      */
     changeOAuthType (state, type = '') {
       state.oauthType = type
@@ -44,6 +57,8 @@ export default new Vuex.Store({
 
     /**
      * 弹出提示框
+     * @param state
+     * @param tips
      */
     changeTips (state, tips = '') {
       state.tips = tips
@@ -51,6 +66,7 @@ export default new Vuex.Store({
 
     /**
      * 是否展示用户左侧菜单
+     * @param state
      */
     changeUserMenuShow (state) {
       state.showUserLeftMenu = !state.showUserLeftMenu
@@ -58,6 +74,8 @@ export default new Vuex.Store({
 
     /**
      * 是否显示回到顶部按钮
+     * @param state
+     * @param type
      */
     changeFloatBlockShow (state, type = true) {
       state.showFloatBlock = type

@@ -194,5 +194,4 @@ export default {
     text-align: center;
     background: #2E2E2E;
   }
-
 </style>

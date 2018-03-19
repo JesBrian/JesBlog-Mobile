@@ -27,6 +27,7 @@ export default {
   name: 'bottom-nav',
 
   mounted () {
+    // document.getElementById('bottomNav').style.width = document.documentElement.clientWidth + 'px'
     document.getElementById('bottomNav').style.top = document.documentElement.clientHeight - 38 + 'px'
   }
 }

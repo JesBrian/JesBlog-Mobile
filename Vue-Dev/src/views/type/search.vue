@@ -114,6 +114,7 @@ export default {
         if ((this.startX <= 38) && ((this.endX - this.startX) >= 68)) {
           this.$store.commit('changeUserMenuShow')
         } else if ((this.startX >= 38) && ((this.endX - this.startX) >= 138)) {
+          this.$store.commit('changeRouterTransition','slide-right')
           this.$router.back(-1)
         }
       }

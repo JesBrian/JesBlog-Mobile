@@ -43,6 +43,7 @@ export default {
         if ((this.startX <= 38) && ((this.endX - this.startX) >= 68)) {
           this.$store.commit('changeUserMenuShow')
         } else if ((this.startX >= 38) && ((this.endX - this.startX) >= 138)) {
+          this.$store.commit('changeRouterTransition','slide-right')
           this.$router.push({ path: '/m/authorList' })
         } else if ((document.body.clientWidth - this.startX <= 38) && ((this.startX - this.endX) >= 68)) {
           this.$router.push({ path: '/m/search' })
