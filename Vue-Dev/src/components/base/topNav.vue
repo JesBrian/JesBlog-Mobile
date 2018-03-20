@@ -41,9 +41,9 @@
     <div v-else style="width:100%; height:38px; margin-top:6px; padding-left:58px; float:right; box-sizing:border-box;">
       <div class="glass-bg box-show" style="width:98%; height:100%; position:relative;">
         <label style="width:100%; height:100%; padding:5px 38px 5px 6px; display:inline-block; box-sizing:border-box;">
-          <input v-focus type="text" placeholder="请输入要搜索的关键词" style="width:100%; height:100%; padding:0 8px; box-sizing:border-box; border:1px solid #222; background:#444; font-size:18px; letter-spacing:1px; color:#CCC;"/>
+          <input v-focus v-model.trim="searchKey" placeholder="请输入要搜索的关键词" style="width:100%; height:100%; padding:0 8px; box-sizing:border-box; border:1px solid #222; background:#444; font-size:18px; letter-spacing:1px; color:#CCC;"/>
         </label>
-        <span class="super-btn-out" style="width:28px; height:28px; top:3px; right:3px; position:absolute;">
+        <span @click="search" class="super-btn-out" style="width:28px; height:28px; top:3px; right:3px; position:absolute;">
           <span class="super-btn-in MyIF search" style="width:22px; height:22px; line-height:23px; font-size:16px;"></span>
         </span>
       </div>
@@ -56,13 +56,24 @@
 export default {
   name: 'top-nav',
 
+  data () {
+    return {
+      searchKey: ''
+    }
+  },
+
   mounted () {
     // document.getElementById('topNav').style.width = document.body.clientWidth + 'px'
   },
 
   methods: {
+
     changeUserMenuShow () {
       this.$store.commit('changeUserMenuShow')
+    },
+
+    search () {
+      this.$root.eventHub.$emit('sureSearch', this.searchKey)
     }
   }
 }

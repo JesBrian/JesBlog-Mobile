@@ -47,7 +47,7 @@ export default new Vuex.Store({
     },
 
     /**
-     * 弹出各种拟态框 OR 关闭拟态框
+     * 改变第三方登陆类型
      * @param state
      * @param type
      */
