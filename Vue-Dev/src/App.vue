@@ -170,7 +170,7 @@ export default {
     text-overflow:ellipsis;
   }
 
-  textarea:focus, input[type='text']:focus {
+  .glow-input:focus {
     border-color:#2af1fc!important;
     animation: glow 666ms ease-out infinite alternate;
   }

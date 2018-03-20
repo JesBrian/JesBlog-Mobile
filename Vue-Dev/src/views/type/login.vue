@@ -6,11 +6,11 @@
       </tr>
       <tr>
         <td style="width:68px; padding-bottom:20px; text-align:right;">邮箱</td>
-        <td style="padding-bottom:18px"><label><input type="text" class="cube-bg box-show" style="width:80%; margin:0 auto; padding:5px 8px; font-size:20px; color:#DDD;"/></label></td>
+        <td style="padding-bottom:18px"><label><input type="text" class="glow-input cube-bg box-show" style="width:80%; margin:0 auto; padding:5px 8px; font-size:20px; color:#DDD;"/></label></td>
       </tr>
       <tr>
         <td style="width:68px; padding-bottom:20px; text-align:right;">密码</td>
-        <td style="padding-bottom:18px"><label><input type="password" class="cube-bg box-show" style="width:80%; margin:0 auto; padding:5px 8px; font-size:20px; color:#DDD;"/></label></td>
+        <td style="padding-bottom:18px"><label><input type="password" class="glow-input cube-bg box-show" style="width:80%; margin:0 auto; padding:5px 8px; font-size:20px; color:#DDD;"/></label></td>
       </tr>
       <tr>
         <td colspan="2">
