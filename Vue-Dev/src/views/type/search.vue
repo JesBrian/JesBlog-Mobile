@@ -40,7 +40,7 @@
     </div>
 
     <!-- 搜索结果 -->
-    <div v-if="hasSearch" style="width:100%; padding-top:48px;">
+    <div v-if="hasSearch" style="width:100%; height:100%; padding-top:48px;">
       <div class="box-show" style="width:100%; height:45px; top:53px; left:0; position:fixed; z-index:20; background:#2E2E2E;">
         <table style="width:68%; height:28px; margin:9px auto 0; line-height:30px; color:#999;">
           <tr>
@@ -50,7 +50,11 @@
           </tr>
         </table>
       </div>
-      <component :is="searchType" />
+
+      <transition name="fade-right" >
+        <component :is="searchType" style="position:relative;" />
+      </transition>
+
     </div>
 
   </div>
@@ -144,9 +148,35 @@ export default {
 
 <style scoped>
   td {
-    border-bottom: 3px solid transparent;
+    position:relative;
   }
   td.active {
-    border-color:lightseagreen;
+    color:#DDD;
+  }
+  td.active:after {
+    content:'';
+    width:100%;
+    height:2.5px;
+    bottom:-4px;
+    left:0;
+    position:absolute;
+    background: linear-gradient(to right, #3072CC, #2DBEFF, #54E0FF, #2DBEFF, #3072CC);
+  }
+
+
+
+  .fade-left-enter-active, .fade-right-enter-active {
+    transition: all .28s ease;
+  }
+  .fade-left-leave-active, .fade-right-leave-active {
+    transition: all .28s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .fade-left-enter, .fade-left-leave-to {
+    transform: translateX(-88%);
+    opacity: 0;
+  }
+  .fade-right-enter, .fade-right-leave-to {
+    transform: translateX(88%);
+    opacity: 0;
   }
 </style>
