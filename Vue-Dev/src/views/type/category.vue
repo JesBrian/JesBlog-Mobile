@@ -32,6 +32,8 @@
 <script>
 import articleList from '@/components/article/articleList.vue'
 
+// import '@/assets/css/animate.css'
+
 export default {
   name: 'index',
 

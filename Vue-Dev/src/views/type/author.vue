@@ -26,9 +26,12 @@
         </span>
       </div>
 
-      <div style="width:100%; margin-top:18px;">
-        <component :is="contentType" />
+      <div style="width:100%; margin-top:18px; overflow:hidden;">
+        <transition name="fade-left">
+          <component :is="contentType" />
+        </transition>
       </div>
+
 
     </div>
   </div>
@@ -39,6 +42,8 @@ import auSummary from '@/components/article/articleDetail.vue'
 import auArticle from '@/components/article/articleList.vue'
 import auFans from '@/components/author/authorList.vue'
 import auComment from '@/components/comment/commentList.vue'
+
+import '@/assets/css/animate.css'
 
 export default {
   name: 'author',
