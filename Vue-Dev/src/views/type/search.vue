@@ -4,11 +4,24 @@
     <!-- 准备搜索 -->
     <div v-if="!hasSearch" style="width:100%; height:100%; top:53px; left:0; padding-bottom:88px; position:fixed; box-sizing:border-box; background:#2E2E2E; overflow-y:auto;">
       <!-- 热门搜索关键词 -->
-      <div class="glass-bg box-show" style="width:92%; min-height:188px; margin:23px auto; box-sizing:border-box;">
+      <div class="glass-bg box-show" style="width:92%; margin:23px auto; padding-bottom:8px; box-sizing:border-box;">
         <p style="margin-bottom:12px; text-align:left; font-size:18px; color:#CCC; border-bottom:1px solid #555; line-height:32px;">
           <i class="MyIF check" style="margin:0 8px; font-size:20px; color:#9f8bff;"></i>热门搜索
         </p>
-
+        <div style="padding:0 8px; text-align:left; color:#AAA; line-height:25px; font-size:17px;">
+          <span style="height:23px; margin:0 6px 12px; padding:3px 12px; display:inline-block; box-shadow:0 0 1px #999; border-radius:16px;">ghhk</span>
+          <span style="height:23px; margin:0 6px 12px; padding:3px 12px; display:inline-block; box-shadow:0 0 1px #999; border-radius:16px;">csu</span>
+          <span style="height:23px; margin:0 6px 12px; padding:3px 12px; display:inline-block; box-shadow:0 0 1px #999; border-radius:16px;">抽身紧好测试</span>
+          <span style="height:23px; margin:0 6px 12px; padding:3px 12px; display:inline-block; box-shadow:0 0 1px #999; border-radius:16px;">赶测试</span>
+          <span style="height:23px; margin:0 6px 12px; padding:3px 12px; display:inline-block; box-shadow:0 0 1px #999; border-radius:16px;">ghhk</span>
+          <span style="height:23px; margin:0 6px 12px; padding:3px 12px; display:inline-block; box-shadow:0 0 1px #999; border-radius:16px;">csu</span>
+          <span style="height:23px; margin:0 6px 12px; padding:3px 12px; display:inline-block; box-shadow:0 0 1px #999; border-radius:16px;">抽身紧好测试</span>
+          <span style="height:23px; margin:0 6px 12px; padding:3px 12px; display:inline-block; box-shadow:0 0 1px #999; border-radius:16px;">赶测试</span>
+          <span style="height:23px; margin:0 6px 12px; padding:3px 12px; display:inline-block; box-shadow:0 0 1px #999; border-radius:16px;">ghhk</span>
+          <span style="height:23px; margin:0 6px 12px; padding:3px 12px; display:inline-block; box-shadow:0 0 1px #999; border-radius:16px;">csu</span>
+          <span style="height:23px; margin:0 6px 12px; padding:3px 12px; display:inline-block; box-shadow:0 0 1px #999; border-radius:16px;">抽身紧好测试</span>
+          <span style="height:23px; margin:0 6px 12px; padding:3px 12px; display:inline-block; box-shadow:0 0 1px #999; border-radius:16px;">赶测试</span>
+        </div>
       </div>
 
       <!-- 搜索历史 -->
