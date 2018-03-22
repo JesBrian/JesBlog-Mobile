@@ -57,13 +57,13 @@ export default {
     }
   },
 
-  watch: {
-    '$route' (to, from) {
-      const toDepth = to.path.split('/').length
-      const fromDepth = from.path.split('/').length
-      this.transitionName = toDepth < fromDepth ? 'fade-right' : 'fade-left'
-    }
-  },
+  // watch: {
+  //   '$route' (to, from) {
+  //     const toDepth = to.path.split('/').length
+  //     const fromDepth = from.path.split('/').length
+  //     this.transitionName = toDepth < fromDepth ? 'fade-right' : 'fade-left'
+  //   }
+  // },
 
   mounted () {
     document.getElementById('secondRouter').style.minHeight = document.body.clientHeight + 'px'

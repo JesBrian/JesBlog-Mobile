@@ -65,20 +65,33 @@ export default {
 
   watch: {
     '$route' () {
-      if (this.$route.path === '/m/article') {
-        this.navType = 'articleNav'
-      } else if (this.$route.path === '/m/author') {
-        this.navType = 'authorNav'
-      } else if (this.$route.path === '/m/category') {
-        this.navType = 'categoryNav'
-      } else if (this.$route.path === '/m/index' || this.$route.path === '/m/categoryList' || this.$route.path === '/m/authorList' || this.$route.path === '/m/articleManagement') {
-        this.navType = 'baseNav'
-      } else if (this.$route.path === '/m/write') {
-        this.navType = 'writeNav'
-      } else if (this.$route.path === '/m/update') {
-        this.navType = 'updateNav'
-      } else if (this.$route.path === '/m/login') {
-        this.navType = 'loginNav'
+      switch (this.$route.path) {
+        case '/m/article':
+          this.navType = 'articleNav'
+          break
+        case '/m/author':
+          this.navType = 'authorNav'
+          break
+        case  '/m/category':
+          this.navType = 'categoryNav'
+          break
+        case '/m/write':
+          this.navType = 'writeNav'
+          break
+        case '/m/update':
+          this.navType = 'updateNav'
+          break
+        case '/m/login':
+          this.navType = 'loginNav'
+          break
+        case '/m/index':
+        case '/m/categoryList':
+        case '/m/authorList':
+        case '/m/articleManagement':
+          this.navType = 'baseNav'
+          break
+        default:
+          this.navType = ''
       }
     }
   },
