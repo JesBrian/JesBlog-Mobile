@@ -8,32 +8,7 @@
 
     <!-- 功能模块 -->
     <transition name="fade-up">
-      <div v-if="this.$route.path === '/m/article'">
-        <p style="line-height:53px; color:#CCC; font-size:28px; letter-spacing:2px; font-weight:700;">文章详情</p>
-      </div>
-      <div v-else-if="this.$route.path === '/m/write'">
-        <p style="line-height:53px; color:#CCC; font-size:28px; letter-spacing:2px; font-weight:700;">编写文章</p>
-      </div>
-      <div v-else-if="this.$route.path === '/m/author'">
-        <p style="line-height:53px; color:#CCC; font-size:28px; letter-spacing:2px; font-weight:700;">作者信息</p>
-      </div>
-      <div v-else-if="this.$route.path === '/m/category'">
-        <p style="line-height:53px; color:#CCC; font-size:28px; letter-spacing:2px; font-weight:700;">分类详情</p>
-      </div>
-      <div v-else-if="this.$route.path === '/m/index' || this.$route.path === '/m/categoryList' || this.$route.path === '/m/authorList' || this.$route.path === '/m/articleManagement'" style="width:100%; height:100%; padding:0 53px; box-sizing:border-box; line-height:55px;">
-        <div style="width:100%; height:100%;">
-          <router-link class="MyIF hot" to="/m/index"/>
-          <router-link class="MyIF music-box" to="/m/categoryList"/>
-          <router-link class="MyIF avatar" to="/m/authorList"/>
-          <router-link class="MyIF add-data" to="/m/articleManagement"/>
-        </div>
-      </div>
-      <div v-else-if="this.$route.path === '/m/update'">
-        <p style="line-height:53px; color:#CCC; font-size:28px; letter-spacing:2px; font-weight:700;">更新资料</p>
-      </div>
-      <div v-else-if="this.$route.path === '/m/login'">
-        <p style="line-height:53px; color:#CCC; font-size:28px; letter-spacing:2px; font-weight:700;">用户登陆</p>
-      </div>
+      <component :is="navType" />
     </transition>
 
     <!-- 搜索按钮 & 搜索框 -->
@@ -58,20 +33,58 @@
 </template>
 
 <script>
+import baseNav from '../topNavType/base.vue'
+import articleNav from '../topNavType/article.vue'
+import authorNav from '../topNavType/author.vue'
+import categoryNav from '../topNavType/category.vue'
+import writeNav from '../topNavType/write.vue'
+import updateNav from '../topNavType/update.vue'
+import loginNav from '../topNavType/login.vue'
 
 import '@/assets/css/animate.css'
 
 export default {
   name: 'top-nav',
 
+  components: {
+    baseNav,
+    articleNav,
+    authorNav,
+    categoryNav,
+    writeNav,
+    updateNav,
+    loginNav
+  },
+
   data () {
     return {
+      navType: 'baseNav',
       searchKey: ''
     }
   },
 
+  watch: {
+    '$route' () {
+      if (this.$route.path === '/m/article') {
+        this.navType = 'articleNav'
+      } else if (this.$route.path === '/m/author') {
+        this.navType = 'authorNav'
+      } else if (this.$route.path === '/m/category') {
+        this.navType = 'categoryNav'
+      } else if (this.$route.path === '/m/index' || this.$route.path === '/m/categoryList' || this.$route.path === '/m/authorList' || this.$route.path === '/m/articleManagement') {
+        this.navType = 'baseNav'
+      } else if (this.$route.path === '/m/write') {
+        this.navType = 'writeNav'
+      } else if (this.$route.path === '/m/update') {
+        this.navType = 'updateNav'
+      } else if (this.$route.path === '/m/login') {
+        this.navType = 'loginNav'
+      }
+    }
+  },
+
   mounted () {
-    // document.getElementById('topNav').style.width = document.body.clientWidth + 'px'
+    // document.getElementById('topNavType').style.width = document.body.clientWidth + 'px'
   },
 
   methods: {
@@ -88,10 +101,5 @@ export default {
 </script>
 
 <style scoped>
-  a.MyIF {
-    height:84%; margin:0 8px; display:inline-block; font-size:30px; color:#BBB;
-  }
-  .MyIF.router-link-active {
-    color:#44D5FF; border-bottom:2px solid #9F8BFF;
-  }
+
 </style>

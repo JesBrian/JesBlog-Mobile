@@ -137,7 +137,7 @@ export default {
               this.searchType = 'searchArticle'
             }
           } else {
-            this.$store.commit('changeRouterTransition', 'slide-right')
+            this.$store.commit('changeRouterTransition', 'fade-right')
             this.$router.back(-1)
           }
         } else if ((this.hasSearch) && (this.startX >= 38) && ((this.startX - this.endX) >= 138)) {

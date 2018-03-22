@@ -7,7 +7,7 @@ export default new Vuex.Store({
   state: {
     // baseHost: 'http://jesbrian.cn/JesBlog-Backstage/web/',
     baseHost: 'http://blog.jesbrian.cn/', // 服务器生产环境部署配置域名
-    transitionName: 'slide-left',
+    transitionName: 'fade-left',
     oauthType: '',
     modalType: '',
     tips: '',
@@ -21,7 +21,7 @@ export default new Vuex.Store({
      * @param state
      */
     resetVuexStore (state) {
-      state.transitionName = 'slide-left'
+      state.transitionName = 'fade-left'
       state.modalType = ''
       state.oauthType = ''
       state.tips = ''
@@ -33,7 +33,7 @@ export default new Vuex.Store({
      * @param state
      * @param type
      */
-    changeRouterTransition (state, type = 'slide-left') {
+    changeRouterTransition (state, type = 'fade-left') {
       state.transitionName = type
     },
 

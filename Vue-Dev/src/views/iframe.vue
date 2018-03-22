@@ -37,6 +37,8 @@ import bottomNav from '@/components/base/bottomNav.vue'
 import modal from '@/components/modal/modalTotal.vue'
 import tips from '@/components/alertTips/alertTips.vue'
 
+import '@/assets/css/animate.css'
+
 export default {
   name: 'iframe',
 
@@ -59,7 +61,7 @@ export default {
     '$route' (to, from) {
       const toDepth = to.path.split('/').length
       const fromDepth = from.path.split('/').length
-      this.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
+      this.transitionName = toDepth < fromDepth ? 'fade-right' : 'fade-left'
     }
   },
 
@@ -73,20 +75,5 @@ export default {
 </script>
 
 <style scoped>
-  .slide-left-enter, .slide-right-leave-active {
-    opacity: 0;
-    transform: translate(88px, 0);
-    transition-delay: .3s;
-  }
-  .slide-left-leave-active, .slide-right-enter {
-    opacity: 0;
-    transform: translate(-88px, 0);
-    transition-delay: .3s;
-  }
-  .slide-enter-active {
-    transition: all .3s ease;
-  }
-  .slide-leave-active {
-    transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-  }
+
 </style>

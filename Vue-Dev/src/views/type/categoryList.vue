@@ -35,7 +35,7 @@ export default {
         if ((this.startX <= 38) && ((this.endX - this.startX) >= 68)) {
           this.$store.commit('changeUserMenuShow')
         } else if ((this.startX >= 38) && ((this.endX - this.startX) >= 138)) {
-          this.$store.commit('changeRouterTransition', 'slide-right')
+          this.$store.commit('changeRouterTransition', 'fade-right')
           this.$router.push({path: '/'})
         } else if ((this.startX >= 38) && ((this.startX - this.endX) >= 138)) {
           this.$router.push({path: '/m/authorList'})
